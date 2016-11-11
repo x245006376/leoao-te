@@ -1,0 +1,90 @@
+/* document of public css */
+
+/* reset */
+
+body,ul,ol,li,dl,dd,dt,img,h1,h2,h3,h4,h5,h6,input,p,span,form,fieldset,textarea,blockquote,table,td,tr,th{margin: 0;padding: 0;}
+li{list-style: none;}
+table{margin:0 auto;}
+input{outline: none;}
+a{text-decoration: none;outline: none;color:#444;}
+a:focus{-moz-outline-style:none;}
+img{border: 0;vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: 12px;font-weight: normal;}
+textarea,input{border: 0;resize:none;}
+i,em{font-style: normal;font-weight: normal;}
+abbr,acronym{border:0;}
+body{font-size: 14px;font-family: '微软雅黑';}
+/* common */
+.fl{float:left;}
+.fr{float: right;}
+.hide{display: none;}
+.show{display: block;}
+.clearfix:after{content: '';display: block;font-size: 0;height: 0;clear: both;visibility: hidden;}
+.clearb{clear: both;display: block;}
+.wrap{width: 1280px;overflow: hidden;margin: 0 auto;}
+.inner{width: 1000px;margin:0 auto;}
+.pd-top{padding-top: 30px;}
+.header-bar{background: #333;height:98px;border-top: 3px solid #000;}
+.top{overflow: hidden;color:#fff;}
+.top .logo{}
+.top .logo img{width: 40px;height: 40px;float: left;}
+.top h1{width: 98px;line-height: 40px;color:#fff;font-size: 30px;letter-spacing: 2px;}
+.top .pipeline{display: block;float: left;font-size: 30px;color:#858585;width: 16px;
+	line-height: 40px;}
+.top p em{display: block;margin-top: 4px;color:#fff;font-size: 12px;font-family:Arial; }
+.top p{color:#fff;font-size: 14px;width: 186px;float: left;}
+.top-nav a{display: block;width: 144px;height: 46px;line-height: 46px;float: left;
+	color: #fff;font-size: 24px;}
+.top-nav .newcomer{width: 106px;height: 46px;line-height: 53px;text-align: center;
+	font-size: 16px;}
+.login-bar{width: 206px;height: 98px;background: #000;}
+.login-bar a{color:#fff;margin-top: 50px;}
+.login-bar .login{display: inline-block;width: 32px;height: 16px;padding-left: 22px;
+	margin-left: 46px;background: url('../images/head.png')no-repeat left top;margin-right: 15px}
+
+.footer-bar{height: 162px;background-color: #000;color:#9b9a9a;}
+.footer-bar .bottom-nav{height:93px;border-bottom: 1px solid #333; overflow: hidden;}
+.bottom-nav .left-side{width: 670px;font-size: 12px;}
+.left-side .tips-links{margin-top: 30px;overflow: hidden;}
+.left-side .tips-links li{float: left;width: 63px;height: 14px;border-right: 1px solid #9b9a9a;
+	margin-right: 18px;line-height: 14px;}
+.left-side .tips-links li a{color:#9b9a9a;}
+ .copyright{height:45px;line-height: 45px;}
+.right-side{margin-top: 30px;} 
+.right-side .friend-links li{float: left;background-repeat: no-repeat;background-position: left top;height: 24px;line-height: 24px;}
+.friend-links li a{color:#fff;font-size: 12px;}
+.sina-blog{width: 69px;padding-left: 26px;background:url('../images/sinablog.png');}
+.tencent-blog{width: 58px;padding-left: 22px;background:url('../images/img01.png');}
+.friend-links .tencent-blog a{color:#d8981c;}
+.tencent-blog i{color:#33b7dd;}
+.weixin{width: 44px;padding-left: 29px;background:url('../images/weixin.png');}
+.consult-online{width: 54px;padding-left: 24px;background: url('../images/erji.png');}
+.bottom-permit{text-align: center;padding-top: 16px;}
+.bottom-permit .permit-1{margin-right: 16px;}
+.bottom-permit .permit-2{margin-right: 12px;}
+.bottom-permit .permit-3{margin-right: 14px;}
+.bottom-permit .permit-4{margin-right: 10px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

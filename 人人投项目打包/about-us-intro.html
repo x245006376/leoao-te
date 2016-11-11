@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/aboutUs.js"></script>
+	<script>
+	window.onload = function(){
+		init();
+	}
+	function init(){
+		$('#introList li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('#itemTitle').html($(this).children().text());
+			var index = $('#introList>li').index($(this));
+			$('.conts-item-intro:eq('+index+')').show().siblings().hide();
+		});
+		$.ajax('json/newsData.json',function(data){
+			var newsData = data;
+			for(i = 0;i < newsData.Netease.length;i++){
+
+			}
+			var cardAvatar = '';
+			$('.report-news').html();
+
+
+		},function(){
+			alert('404');
+		})
+	}
+
+
+	</script>
+</head>
+<body>
+<div class="wrap">
+		<div class="header-bar">
+			<div class="inner top">
+				<div class="logo pd-top fl">
+					<img src="images/logo.png" alt="logo">
+					<h1 class="fl">人人投</h1>
+					<span class="pipeline">|</span>
+					<p><em>renrentou.com</em>投资您身边的店铺</p>	
+				</div>
+				<div class="top-nav fl pd-top">
+					<a href="">店铺融资</a>
+					<a href="">店铺投资人</a>
+					<a href="" class="newcomer">新手指引</a>
+				</div>
+				<div class="login-bar fl">
+					<a href="" class="login">登录</a>
+					<a href="" class="register">注册</a>
+				</div>
+			</div>
+		</div>
+
+
+	<div class="cont-login">
+			<div class="sub-page-title">
+				<h2>关于我们</h2>
+			</div>
+			<div class="inner login-form intro">
+				<div class="list-left fl">
+					<ul class="intro-list" id="introList">
+						<li class="active"><a href="#">公司简介</a></li>
+						<li><a href="#">隐私权政策</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">合作伙伴</a></li>
+					</ul>
+				</div>
+				<div class="conts-right fr">
+					<h2 id="itemTitle">公司简介</h2>
+					<div class="cross-pipeline"></div>
+					<div class="conts-box">
+						<div class="conts-item-intro" style="display:block">
+							<p>							
+								北京飞度网络科技有限公司，其前身就是曾经在互联网投融信息圈轰动一时的国际资金项目网，
+								网站最早在2004年由郑林先生创立，伴随互联网行业发展的起伏跌宕，国际资金项目网也几度沉浮。
+							</p>						
+							<p>
+								2011年郑林先生王者归来，他怀揣一直坚持的最初梦想“帮助全球华人创业者实现梦想”再度重装上阵，
+								于10月份在北京正式注册北京飞度网络科技有限公司，为了能够全方位的帮助创业者服务，飞度旗下已经逐步形成三大互联网平台，“人人投www.renrentou.com”、“创业梦www.chuangyemeng.com”、 “国际资金项目网www.guoji110.com”它们相辅相成，分别帮助创业者解决项目融资，创业指导、创业资讯，寻找创业合作伙伴和海外创业信息服务。
+							</p>
+							<p>
+								北京飞度网络科技有限公司是由一群平均年龄不足30岁，有着执着创业梦想和强烈创业激情的互联网年轻人组成，
+								这群人是为了一个共同的梦想“帮助全球华人创业者实现梦想”走到一起，这一群人也将为了实现自己的梦想，不畏前途艰险、携手并进、勇往直前！
+							</p>
+						</div>
+						<div class="conts-item-intro" style="display:none">
+							<p>
+								人人投”尊重并保护所有遵守“人人投”规则并使用“人人投”服务的用户的个人隐私权。为了给您提供更准确、更有个性化的服务，“人人投”会按照本隐私权政策的规定使用和披露您的个人信息。							
+							</p>
+							<p>
+								<span>我们收集的信息</span><br />
+								我们收集信息是为了向所有用户提供更好的服务，这既包括获取您向我们提供信息，主要是您的个人信息，例如您的姓名、电子邮件地址、电话号码等；也包括获取您使用服务的过程中的信息，此类信息可能包括：您的IP、浏览器、操作系统版本等设备信息，位置信息，Cookie等。
+							</p>
+							<p>
+								如果您愿意，还可以提交附加个人信息（包括在您的专页和论坛中）。请注意，您提交的任何信息均将成为他人可查看的公开信息。但“人人投”将以高度的勤勉、审慎义务对待这些信息。
+							</p>
+							<p>
+								<span>我们如何使用收集到的信息</span><br />							
+								尊重用户个人隐私是“人人投”的一项基本政策，“人人投”将尽力维护用户隐私。
+								本公司有权为内部业务目的使用您提供的个人资料，诸如促进本公司业务和本公司提供给客户的服务及产品的日常管理和营运，监控本网站的使用及安全，实施内部控制，以及制备统计数字、进行规划和研究等目的；或设计服务和产品供客户使用；或推广（包括直销及市场调查）目的；或确认、核对或记录及维护通信和推广的联络名单；或解决争议、排除问题和执行本法律声明；或使本公司任何业务或经营活动的参与者、附属参与者或受让人能对相关转让、参与项目、附属参与项目或转移进行评估；或与上述任何一项直接有关的其它目的。
+							</p>
+							<p>
+								<span>除外情况</span><br />							
+								除非用户授权或本隐私权政策另有规定外，“人人投”一定不会公开、修改或透露用户的注册资料或向无关第三方提供，亦不会公开“人人投”各项服务中的非公开内容，但以下情况除外：
+								国家法律法规强制性规定或应有权机关要求，提供用户在人人投平台发布的信息内容及其发布时间、互联网地址或者域名；
+								<i>为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；</i>
+								<i>由于用户对自身信息保密不当，导致用户非公开信息泄露。</i> 
+								<i>为维护人人投平台的知识产权和其他重要权利；</i> 
+								<i>在紧急情况下为维护用户个人和社会大众的隐私安全；</i> 
+								<i>根据本条款相关规定或者人人投平台认为必要的其他情况下。</i>
+							</p>
+							<p>
+								<span>用户须知</span><br />							
+								用户在本网站注册时，须依服务注册表之提示提供用户本人真实、正确、最新及完整的资料，并保证个人资料的适时更新，因用户提供个人信息不准确、不完整及未及时更新给用户造成的任何损害，本公司不承担任何责任。因用户提供个人信息不准确、不完整及未及时更新给本公司造成损失的，本公司保留追偿的权利。
+							</p>
+							
+						</div>
+						<div class="conts-item-intro report-news" style="display:none;">
+							<div class="card-avatar">
+								<div class="media-identi"><img src="images/netease-icon.jpg" alt=""></div>
+								<h4 class="news-title">人人投:守店不如拓店 众筹更胜独资</h4>
+								<em class="report-time">2014/03/09</em>
+								<span class="report-media">网易新闻报道</span>
+								<p>近些年，由于租金、人工等成本上涨，许多企业的门店拓展也遭遇困难，对于想要拓店的来讲，首先
+								要面对的就是资金不足的问题，只有梦想没有资金，又如何让自己的梦想变成现实呢?
+								</p>
+							</div>
+							<div class="card-avatar">
+								<div class="media-identi"><img src="images/netease-icon.jpg" alt=""></div>
+								<h4 class="news-title">人人投:守店不如拓店 众筹更胜独资</h4>
+								<em class="report-time">2014/03/09</em>
+								<span class="report-media">网易新闻报道</span>
+								<p>近些年，由于租金、人工等成本上涨，许多企业的门店拓展也遭遇困难，对于想要拓店的来讲，首先
+								要面对的就是资金不足的问题，只有梦想没有资金，又如何让自己的梦想变成现实呢?
+								</p>
+							</div>
+							<div class="card-avatar">
+								<div class="media-identi"><img src="images/netease-icon.jpg" alt=""></div>
+								<h4 class="news-title">人人投:守店不如拓店 众筹更胜独资</h4>
+								<em class="report-time">2014/03/09</em>
+								<span class="report-media">网易新闻报道</span>
+								<p>近些年，由于租金、人工等成本上涨，许多企业的门店拓展也遭遇困难，对于想要拓店的来讲，首先
+								要面对的就是资金不足的问题，只有梦想没有资金，又如何让自己的梦想变成现实呢?
+								</p>
+							</div>
+							<div class="card-avatar">
+								<div class="media-identi"><img src="images/netease-icon.jpg" alt=""></div>
+								<h4 class="news-title">人人投:守店不如拓店 众筹更胜独资</h4>
+								<em class="report-time">2014/03/09</em>
+								<span class="report-media">网易新闻报道</span>
+								<p>近些年，由于租金、人工等成本上涨，许多企业的门店拓展也遭遇困难，对于想要拓店的来讲，首先
+								要面对的就是资金不足的问题，只有梦想没有资金，又如何让自己的梦想变成现实呢?
+								</p>
+							</div>
+						</div>
+						<div class="conts-item-intro" style="display:none;">
+							<p>
+								人人投客户服务电话 <br />
+								客户服务热线：400-070-5286 <br />
+								客户在线咨询：QQ 2355820721  2355451272 <br />
+							</p>	
+							<p>
+								人人投办公地址和总机电话<br />
+								地址：北京市西城区莲花池东路106号汇融大厦A座1204—1206<br />
+								邮编：100045<br />
+								总机：400-070-5286<br />
+							</p>
+
+
+
+						</div>
+						<div class="conts-item-intro" style="display:none;">
+							<div class="icons-row">
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-dfcfw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>							
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-hqwcj.jpg" alt=""></a>								
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-dfcfw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>							
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-hqwcj.jpg" alt=""></a>								
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>							
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-hqwcj.jpg" alt=""></a>								
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-dfcfw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>							
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-hqwcj.jpg" alt=""></a>								
+							</div>
+							<div class="icons-row">
+								<a href="#"><img src="images/icon-bxgy.jpg" alt=""></a>							
+								<a href="#"><img src="images/logo-jsgj_03.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-lfxw.jpg" alt=""></a>
+								<a href="#"><img src="images/icon-hqwcj.jpg" alt=""></a>								
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	
+		<div class="footer-bar">
+			<div class="bottom-nav inner">
+				<div class="left-side fl">
+					<ul class="tips-links">
+						<li><a href="">网站首页</a></li>
+						<li><a href="">关于我们</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">新手指引</a></li>
+						<li><a href="">友情链接</a></li>
+					</ul>
+					<p class="copyright">
+						北京飞度网络科技有限公司 www.renrentou.com 版权所有 京ICP备12015672号-7
+					</p>
+				</div>
+				<div class="right-side fl">
+					<span>关注人人投</span>
+					<ul class="friend-links">
+						<li class="sina-blog"><a href="#" >新浪微博</a></li>
+						<li class="tencent-blog"><a href="#" ><i>腾讯</i>微博</a></li>
+						<li class="weixin"><a href="#" >微信</a></li>
+						<li class="consult-online"><a href="#" >在线咨询</a></li>
+					</ul>
+				</div>  
+			</div>
+			<div class="bottom-permit inner">
+				<a href="#" class="permit-1"><img src="images/prim-01.png" alt=""></a>
+				<a href="#" class="permit-2"><img src="images/prim-02.png" alt=""></a>
+				<a href="#" class="permit-3"><img src="images/prim-03.png" alt=""></a>
+				<a href="#" class="permit-4"><img src="images/prim-04.png" alt=""></a>
+				<a href="#" class="permit-5"><img src="images/prim-05.png" alt=""></a>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

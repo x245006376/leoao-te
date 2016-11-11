@@ -1,0 +1,307 @@
+/*重置css*/
+body,ul,ol,li,dl,dd,dt,img,h1,h2,h3,h4,h5,h6,input,p,span,form,fieldset,textarea,blockquote,table,td,tr,th{margin: 0;padding: 0;}
+li{list-style: none;}
+table{margin:0 auto;}
+a{text-decoration: none;outline: none;color:#444;}
+a:focus{-moz-outline-style:none;}
+img{border: 0;vertical-align: top;}
+input{border:0;outline: none;background: none;}
+h1,h2,h3,h4,h5,h6{font-size: 12px;font-weight: normal;}
+textarea,input{border: 0;resize:none;}
+i,em{font-style: normal;font-weight: normal;}
+abbr,acronym{border:0;}
+body{font-size: 14px;font-family: '微软雅黑';color:#333;}
+b,strong{font-style: normal;font-weight: normal;}
+/*公用css*/
+.fl{float:left;}
+.fr{float: right;}
+.clearfix:after{content: '';display: block;font-size: 0;height: 0;clear: both;visibility: hidden;}
+.clearb{clear: both;display: block;}
+.wrap{width: 1280px;overflow: hidden;margin: 0 auto;background: #f9f9f9;}
+.inner{width: 1000px;margin:0 auto;}
+.orange{background:#f39c11;color:#fff;}
+.tomato{background:#db4f33;color:#fff;}
+.hide{display: none;}
+.border{border: 1px solid #ccc;border-top: 3px solid #000;}
+/*人人投的个人简介页面*/
+/*头部*/
+.pd-top{padding-top: 30px;}
+.header-bar{background: #333;height:98px;border-top: 3px solid #000;}
+.top{overflow: hidden;color:#fff;}
+.top .logo{}
+.top .logo img{width: 40px;height: 40px;float: left;}
+.top h1{width: 98px;line-height: 40px;color:#fff;font-size: 30px;letter-spacing: 2px;}
+.top .pipeline{display: block;float: left;font-size: 30px;color:#858585;width: 16px;
+    line-height: 40px;}
+.top p em{display: block;margin-top: 4px;color:#fff;font-size: 12px;font-family:Arial; }
+.top p{color:#fff;font-size: 14px;width: 186px;float: left;}
+.top-nav a{display: block;width: 144px;height: 46px;line-height: 46px;float: left;
+    color: #fff;font-size: 24px;}
+.top-nav .newcomer{width: 106px;height: 46px;line-height: 53px;text-align: center;
+    font-size: 16px;}
+.login-bar{width: 206px;height: 98px;background: #000;}
+.login-bar a{color:#fff;margin-top: 50px;}
+.login-bar .login{display: inline-block;width: 32px;height: 16px;padding-left: 22px;
+    margin-left: 46px;background: url('../images/head.png')no-repeat left top;margin-right: 15px}
+/*脚部*/
+.footer-bar{height: 162px;background-color: #000;color:#9b9a9a;}
+.footer-bar .bottom-nav{height:93px;border-bottom: 1px solid #333; overflow: hidden;}
+.bottom-nav .left-side{width: 670px;font-size: 12px;}
+.left-side .tips-links{margin-top: 30px;overflow: hidden;}
+.left-side .tips-links li{float: left;width: 63px;height: 14px;border-right: 1px solid #9b9a9a;
+    margin-right: 18px;line-height: 14px;}
+.left-side .tips-links li a{color:#9b9a9a;}
+.copyright{height:45px;line-height: 45px;}
+.right-side{margin-top: 30px;}
+.right-side .friend-links li{float: left;background-repeat: no-repeat;background-position: left top;height: 24px;line-height: 24px;}
+.friend-links li a{color:#fff;font-size: 12px;}
+.sina-blog{width: 69px;padding-left: 26px;background:url('../images/sinablog.png');}
+.tencent-blog{width: 58px;padding-left: 22px;background:url('../images/img01.png');}
+.friend-links .tencent-blog a{color:#d8981c;}
+.tencent-blog i{color:#33b7dd;}
+.weixin{width: 44px;padding-left: 29px;background:url('../images/weixin.png');}
+.consult-online{width: 54px;padding-left: 24px;background: url('../images/erji.png');}
+.bottom-permit{text-align: center;padding-top: 16px;}
+.bottom-permit .permit-1{margin-right: 16px;}
+.bottom-permit .permit-2{margin-right: 12px;}
+.bottom-permit .permit-3{margin-right: 14px;}
+.bottom-permit .permit-4{margin-right: 10px}
+
+/*内容区公用的样式*/
+.main-top{height: 24px;padding: 21px 0 16px 4px;}
+.main-top p{border-left:6px solid #000;font-family:"Regular";font-size: 22px;line-height: 24px;height:24px;padding-left:9px;}
+.main-center{height:168px;width: 980px; border: 1px solid #ccc;padding: 16px 0 16px 18px;margin-bottom: 18px;background: #fff;}
+.main-img , .per-mess, .name , .message p , .message div, .per-mess ul li{float: left}
+.message{float: right;margin-right: 39px;}
+.name-mess{height: 38px;}
+.name{background: url("../images/touxiang_03.jpg") no-repeat right ;padding-right: 19px;line-height: 31px;}
+.per-mess ul{height:37px;background: #f2f2f2;width:844px;padding: 4px 0;}
+.per-mess .name-mess , .company {padding-left: 51px;}
+.per-mess .percent{height:16px;text-align: center;line-height: 16px;}
+.per-mess ul li{width: 72px;border-right:1px #acacac dotted;padding-left:17px;height:37px;}
+.per-mess ul li a{color:#000;}
+.per-mess ul li p{font-size: 18px;height: 20px;}
+.per-mess ul li span{font-size: 12px;}
+.per-mess .padding-txt{padding-left: 51px;}
+.per-mess .last-row{border: none;}
+.company{padding-right: 38px;}
+.company .company-txt p{font-size: 14px;padding-top: 11px;}
+.company .company-txt p span{font-size: 12px;color:#888;padding-left: 12px;}
+.company .company-txt p img{padding-top: 4px;}
+.company .company-bg{padding-top: 23px;}
+.company .company-bg a{width:103px;height:22px;color:#fff;display: block;float: left;line-height: 22px;margin-left: 13px;text-align: center;}
+.mainBot-left{width:230px;border: #ccc 1px solid;padding: 14px 11px 8px;background: #fff;}
+.mainBot-left .one-menu {width: 197px;margin-bottom: 7px;line-height: 39px;}
+.mainBot-left .shop-menu{padding-left: 17px; padding-right: 16px;}
+.mainBot-left li a{display: block;}
+.sub-menu a{ padding-right: 16px;padding-left: 17px;}
+
+.active{background: #db4f33;}
+.active a{color:#fff;}
+.bg-active{background: #f2f2f2;}
+.menuList{width: 685px;padding: 0 20px;background: #fff;}
+/*内容区的样式*/
+.mainBot-right{min-height: 664px;margin-bottom: 60px;background: #fff;}
+.mainBot-right .resume{height:48px;border-bottom: 1px dotted #ccc;}
+.mainBot-right .resume p{font-size: 16px;line-height: 48px;font-weight: 700;}
+.mainBot-right .resume a{width: 43px;height:19px;margin-top: 21px;line-height: 19px;text-align: center;}
+.mainBot-right .right-desc{border-bottom: 1px dotted #ccc;padding-top: 20px;}
+.mainBot-right .right-desc p{line-height: 26px;margin-bottom: 24px;color:#333;}
+.mainBot-right .right-desc .money{height:38px;}
+.right-desc .money span{line-height: 19px;width: 300px; height:19px;background: #f7f7f7;font-size: 12px;color:#bdbdbd;padding-left: 4px;margin-top: 10px;}
+.right-desc .money h3{font-size: 16px;line-height: 38px;margin-right: 10px;font-weight: bold;}
+.right-desc .money p{line-height: 38px;color:#208cc1;margin-right: 9px;}
+.right-desc .money strong{font-weight: normal;margin-top: 7px;
+    height:23px;background: #adadad url("../images/baijiao.jpg") no-repeat 70px center;line-height: 23px;color:#fff;
+    width:78px;padding-left: 4px;font-size:12px;}
+.right-desc .round{margin-left:8px;width:250px;background: url("../images/quanquan_r01.jpg") no-repeat left center;
+    padding-left:20px; }
+.right-desc .ye-round{margin-left: 8px;width: 280px;background: url("../images/quanquan_y03.jpg") no-repeat left center;padding-left: 20px;}
+
+.right-desc h3{height:27px;line-height:27px;margin-bottom:7px;font-size: 14px;}
+.mar-bot{margin-bottom:24px;background: url("../images/quanquan_g02.jpg") no-repeat left center;padding-left: 20px;}
+.last-bot{padding-top: 19px;}
+.sj-bot{margin:0 9px 27px 10px;}
+.sub-menu{width: 198px;}
+.sub-menuul{background: #fff;}
+.sub-menuul a{color:#333;}
+/*脚部*/
+/*人人投的个人信息编辑页面*/
+.mainBot-right02{height:900px;padding-bottom:30px;margin-bottom: 60px;}
+.mainBot-right02 .imh-set{height:328px;border-bottom: 1px dotted #ccc;}
+.mainBot-right02 .imh-set h3{margin-left:24px;font-size: 14px;color: #000;height:61px; line-height: 61px;}
+.mainBot-right02 .imh-set .upload{width: 218px;height:218px;border: 1px solid #ccc;margin-left:23px;
+                        background: #f3f3f3 url("../images/upload.png") no-repeat center 40px;font-size: 12px; }
+.mainBot-right02 .imh-set .upload p{line-height: 24px;height:24px;margin-top: 140px;text-align: center;}
+.mainBot-right02 .imh-set .upload-bg{margin:107px 0 0 87px;}
+.mainBot-right02 .text-color{height: 61px;line-height: 61px;color:#db4f33;}
+.mainBot-right02 .input-list{height:570px;}
+.mainBot-right02 form , .mainBot-right02 .text-color{padding-left: 22px;}
+.mainBot-right02 form label{display:block;font-size: 0;margin-bottom: 25px;}
+.mainBot-right02 form span{display:inline-table;text-align: right;font-size:14px;width:70px; }
+.mainBot-right02 form input{width: 274px; height:16px; border: 1px solid #ccc;padding: 12px 0 12px 10px;}
+.mainBot-right02 form .small-input{width: 102px;}
+.mainBot-right02 form label .pro{width: 36px;text-align: center;}
+.mainBot-right02 form .btn{width:100px; height:36px;margin-right: 22px;padding: 0;color: #fff;font-size: 16px;}
+.mainBot-right02 form .pad-left{padding-left: 70px;}
+.btn-color{background:#db4f33;}
+.btn-cancel{background: #a4a4a4;}
+
+
+/*人人投的店铺信息约谈页面*/
+.mainBot-right03{width:729px;margin-bottom: 60px;padding:22px 0 0;border:none;border-top: 3px solid #000;background: #f9f9f9;}
+.mainBot-right03 .store{width: 720px;height:132px;border: 1px solid #ccc;
+    padding: 7px 0 6px 7px;margin-bottom: 26px; position: relative;background: #fff;}
+.mainBot-right03 .sj-img{position: absolute;z-index: 9;left: -6px;top:-7px;}
+.mainBot-right03 .store .store-img{width: 257px;height:132px;overflow: hidden;
+                        background: url("../images/store01.png") no-repeat left top;position: relative;}
+.mainBot-right03 .store .support{  width: 50px;height:14px;padding: 4px 8px;
+    position: absolute;right:6px;top:5px;background: #fff;opacity: .9;border-radius:10px;}
+.mainBot-right03 .store .support span{font-size: 12px;height:12px;}
+.mainBot-right03 .store  .shop-desc{width: 462px;}
+.mainBot-right03 .store  .shop-desc h3{padding-left:14px;height: 39px;line-height: 39px;color: #000;font-weight: 500;font-size: 15px;}
+.mainBot-right03 .store .shop-invest{    padding: 0 20px 10px 14px;}
+.mainBot-right03 .store .shop-invest a{width:93px;height:24px;background:#feb34b;color: #fff;line-height: 24px;}
+.mainBot-right03 .store .shop-invest p{text-align: center;width: 80px;margin-left:30px;}
+.mainBot-right03 .store .shop-invest span{display: block;}
+.mainBot-right03 .store .shop-icon{height:32px;background: #f3f3f3;padding-right: 16px;}
+.mainBot-right03 .store .shop-icon .item-icon01{margin-left: 20px;}
+.mainBot-right03 .item-icon01, .shop-icon .item-icon02,.shop-icon .item-icon03{width: 32px;margin-right: 13px;float: left;line-height: 32px;padding-left: 18px;}
+.mainBot-right03 .item-icon01{background: url("../images/01.png") no-repeat left center;}
+.mainBot-right03 .item-icon02{background: url("../images/star.png") no-repeat left center;}
+.mainBot-right03 .item-icon03{background: url("../images/download.png") no-repeat left center;}
+.mainBot-right03 .delete-txt{color:#208bc0;line-height: 32px;}
+
+/*人人投的店铺投资的空页面*/
+.mainBot-right04{height: 542px;margin-bottom: 60px;}
+.mainBot-right04 p{margin-top: 104px;text-align: center;font-size: 18px;margin-bottom: 64px;}
+.mainBot-right04 a{width: 152px;height: 39px;background:#a6a6a6;text-align: center;line-height: 39px;color:#fff;border-radius: 5px;}
+.mainBot-right04 .submit-color{background: #feb34b;margin-right: 25px;margin-left: 186px;}
+/*资金管理页面*/
+.mainBot-right05{padding: 0;margin-bottom: 60px;}
+.account{height: 61px;border-bottom: 1px dotted #ccc;padding-top: 32px;}
+.account p{padding-left: 24px;margin-right: 78px;line-height: 30px;}
+.account p span{color:#f4a330;}
+.account .check-money{width:140px;height: 30px;line-height: 30px;border-radius: 3px;text-align: center;}
+.account-bot{height: 114px;padding-left: 9px;}
+.query{width:328px;height: 64px;margin-top: 26px;border-right: 1px dotted #ccc;}
+.account-list .account-bot .query p{width: 180px;text-align: right;line-height: 34px;}
+.account-list .account-bot .query a{width: 95px;height:33px;text-align: center;
+                                        line-height: 33px;border-radius: 3px;margin-left: 34px;margin-top: 18px;}
+.card-list{height:261px;}
+.no-border{border: none;}
+.o-btn{background: #f39c11;color: #fff;border-radius: 3px;}
+.g-btn{background: #a4a4a4;color:#fff;border-radius: 3px;}
+.mainBot-right05 .card{height:45px;line-height: 45px;font-size: 16px;background: #f9f9f9;}
+.add-card{height: 72px;width: 198px;border-radius: 3px; border: 1px dotted #ccc;
+            margin-top: 34px;text-align: center;padding-top: 30px;font-size: 12px;margin-left: 32px;}
+.add-card p{color: #007bb8;line-height: 21px;}
+.card-bank{height: 217px;margin-left: 95px;padding-top: 44px;}
+.card-bank .change-card{width: 140px;height: 30px;text-align: center;line-height: 30px;margin: 18px auto;border-radius: 2px;}
+
+/*我的动态页面*/
+.mainBot-right06{margin-bottom: 60px;}
+.booking-order{border-bottom:1px dotted #ccc;height: 100px;padding-left: 50px;padding-top: 30px;}
+.img-touxiang{width: 70px;height:70px;overflow: hidden;}
+.img-touxiang img{width: 100%; }
+.text-trends{margin-left: 62px;}
+.text-trends p{line-height: 24px;margin-bottom: 36px;}
+.text-trends span{font-size: 12px;color: #bdbdbd;}
+.text-trends p span{color: #f39c11;margin: 0; font-size: 14px;}
+.order-trends{border-bottom:1px dotted #ccc;height: 104px;padding-top:26px;background: #f5f5f5;}
+.order-trends .text-trends{margin-left:12px; }
+.pager-break{height:88px;}
+.order-trends .text-trends span{font-size: 12px;color: #bdbdbd;}
+.order-trends .text-trends p span{font-size: 12px;color: #000;}
+.order-trends p{color: #f39c11;}
+/*我关注的页面*/
+.text-trends02 span{color:#bdbdbd;font-size: 12px;}
+.text-trends02  h3{margin-bottom: 36px;}
+.text-trends02  h3 span{color:#f39c11;font-size: 14px;}
+.bg-trends{background: #fff;}
+/*粉丝页面&&个人主页关注页面（2页面）*/
+.mainBot-right07{margin-bottom: 60px;}
+.fans{height: 91px;border-bottom:1px dotted #ccc;padding-top: 14px; }
+.fans .fans-txt{padding: 10px 0 0 14px;}
+.fans-txt p{height: 40px;line-height: 40px;}
+.fans p span{font-size: 12px;color:#bdbdbd;margin-left: 8px; }
+.fans .fans-txt .txt-size{height:20px;line-height: 18px;}
+.fans .fans-txt .txt-size span{font-size: 18px;margin-right: 5px;color:#f39c11;margin-left:0;}
+.fans .item-icon{margin-right: 15px;}
+.fans .each-other{width: 95px;height: 33px;line-height: 33px;margin-right: 12px;
+                    text-align: center;border-radius: 3px;margin-top: 14px;}
+.fans .del-btn{color:#007bb8;margin-top: 14px;height: 33px;line-height: 33px;margin-right: 12px;}
+.pager-fans{height:120px;}
+/*个人主页评论区*/
+.mainbot-right{margin-bottom: 60px;}
+.discuss-list{padding: 20px 0 16px;border-bottom: 1px dotted #ccc;}
+.discuss-list .text-touxiang p{line-height: 24px;}
+.discuss-list .txt-size img{padding-top: 3px;}
+.discuss-bgcolor{background: #f9f9f9;}
+.discuss-list .reply-text{width: 470px;}
+.discuss-list .reply-text p{font-size: 14px;}
+.discuss-list .reply-text span{font-size: 14px;}
+/*其它人的页面主页信息*/
+.company .company-bg .other-pro{width: 95px;height: 33px;text-align: center;line-height: 33px;}
+.message a{margin-left: 20px;}
+
+
+
+
+
+
+
+
+
+
+/*消息管理页面*/
+.message-manager .main-top{height:24px;margin: 21px 0 14px 4px;padding:0 0 0 8px;
+                            font-size: 20px;border-left:6px solid #000;}
+.message-manager .main-left{padding:14px 11px;border: 1px solid #ccc;width:230px;height:140px;background: #fff;}
+.message-manager .main-left li{margin-bottom: 7px;height:39px;line-height: 39px;padding-left: 16px;}
+.message-manager .main-right{width: 729px;margin-bottom: 60px;}
+.main-right-nav{height:48px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc}
+.main-right-nav ul li{float: left;height: 48px;line-height: 48px;padding: 0 32px;border-right: 1px solid #ccc;}
+.main-right-nav ul .no-border{border: none;}
+.main-right-nav ul .border-active{border-bottom: 1px solid #fff;background: #fff;}
+.message-manager .main-right-content{background: #fff;;padding:8px 20px 0;}
+.content-list{padding: 16px 20px;border-bottom: 1px dotted #ccc;overflow: hidden;}
+.text-touxiang{padding-top: 18px;margin-left: 15px;width:560px;}
+.text-touxiang span{color:#f39c11;font-size: 18px;line-height: 20px;}
+.text-touxiang b{color: #bdbdbd;font-size: 12px;margin-top: 12px;display: block;}
+.text-touxiang .text-size{font-size: 14px;}
+.text-touxiang p{line-height: 22px;}
+.text-touxiang strong{display: block;font-size: 12px;color: #bdbdbd;}
+.message-manager .content-list .text-touxiang{width:460px;}
+.content-list .meeting{width: 95px;height:33px;text-align: center;line-height: 33px;margin-top: 20px;}
+.content-list .choose{padding-top: 20px;}
+.content-list .choose a{display: block;width: 72px;height:26px;text-align: center;line-height: 26px;margin-bottom: 8px}
+.agree-btn{background:#db4f33;color: #fff;}
+/*消息页面没有消息的*/    /*消息管理页面的关注页面*/
+.main-right-content .no-message{margin-top: 24px;padding-left: 32px;}
+.nomessage-cont{height:430px;color: #000;}
+.check-look{margin-left: 5px;font-size: 12px;color:#007bb8;}
+.text-touxiang .reply{color:#007bb8;margin:0 3px;font-size: 12px;}
+/*私信回复*/
+.content-talk{background: #f9f9f9;min-height: 217px;}
+.talk-input{height:217px;width: 590px;}
+.talk-input input{display: block;background: #fff;width: 590px;height:98px;border: 1px solid #ccc;margin-bottom: 10px;}
+.talk-input p{margin-bottom: 25px;margin-top: 15px;}
+.talk-input span{line-height: 33px;}
+.talk-input a{width: 95px;height: 33px;text-align: center;line-height: 33px;background: #db4f33;}
+.talk-img{background: #f9f9f9;}
+.talk-img p{margin: 15px 3px 22px;color:#007bb8;}
+.touxiang-reply{background: #f9f9f9;width: 70px;height: 70px;}
+.text-right{text-align: right;padding-right: 20px;margin-right: 20px;padding-top: 20px;}
+.text-right b{color: #bdbdbd;font-size: 12px;margin-top: 12px;display: block;}
+.discuss-list .del-btn{color:#007bb8;padding-right:8px;font-size: 12px;}
+
+/*弹窗*/
+.black-modul{width: 100%;height: 100%;position: fixed;top: 0;left: 0;z-index: 9;background: #000;opacity: .3;}
+.alertBox{z-index:10;border: 5px solid #b8b8b8;border-radius: 5px;width:456px;height:315px;position: absolute;left: 0;top:0;right: 0;bottom: 0;margin:auto;}
+.alertBox h3{height:67px;line-height: 67px;padding-left: 19px;color:#fff;background: #000;font-size: 20px;}
+.alertBox .btn-close{position: absolute;right:30px;top:15px;color:#fff;font-size: 20px;}
+.text-alert{padding:31px 28px 0 28px;background: #e4e4e4;height:217px;}
+.alertBox .text-alert p{background: #fff;height: 128px;padding:10px 15px 0 10px ;line-height: 30px;margin-bottom: 23px;}
+.alertBox .text-alert a{width: 100px;height:36px;text-align: center;line-height: 36px;display: block;float: left;color: #fff;}
+.alertBox .confirm-btn{background: #db4f33;margin-left: 90px; margin-right: 22px;}

@@ -1,0 +1,52 @@
+.main{overflow: hidden;}
+.main .main-top{line-height: 57px; height: 57px;font-size: 14px; margin-bottom: 15px;background: url("../images/percent_bg_25.jpg") no-repeat 112px 21px}
+.main .main-top p{padding-left: 26px;}
+.main .main-top span{padding-right: 20px;color: #e6504e;}
+.main .main-left{width: 252px;}
+.main .main-left ul{padding: 14px 11px 1px;}
+.main .main-left ul li{line-height: 39px;padding-left: 40px;margin-bottom: 7px;}
+.main .main-left ul .active{background: #f2f2f2 url("../images/xiangmu_sanjiao.jpg") no-repeat 210px 16px;}
+.main .main-right{width: 725px;border-top: 3px solid #000;padding-top: 30px;}
+.main .main-right .item1{height: 67px;}
+.main .main-right .item2{height: 131px;}
+.main .main-right .item3{height: 182px;}
+.main .main-right .item4{height: 115px;}
+.main .main-right .item5{height: 150px;}
+.main .main-right .item6{height: 38px;}
+.main .main-right .item7{height: 79px;}
+.main .right-input .pic-box1{width: 166px;height: 86px;float: left;margin-top: 10px;}
+.main .right-input .pic-box2{width: 123px;height: 123px;float: left;margin-top: 10px;}
+.main .right-input .update-btn{width: 117px;height: 36px;border: none;background: #a4a4a4;}
+.main .right-input .update-btn1{margin: 60px 0 0 20px;}
+.main .right-input .update-btn2{margin: 88px 0 0 20px;}
+.main .left-text{float: left;width: 155px;text-align: right;padding-right: 15px;line-height: 42px;}
+.main .left-text span{color: #db4f33;}
+.main .right-input {float: left;width: 510px;}
+.main .right-input input{height: 40px;width: 284px;}
+.main .right-input select{height: 40px;width: 102px;margin-right: 15px;}
+.main .right-input textarea{height: 150px;width: 488px;resize: none;}
+.main .right-input .input1{width: 374px;padding-left: 9px;margin-top: 16px;}
+.main .right-input .check{width: 13px;height: 13px;}
+.inner .main .next-btn{width: 100px;height: 36px;border: none;background: #db4f33;font-size: 16px;font-weight: bold;color: white;}
+.main .main-right ul{overflow: hidden;}
+.main .main-right .main-title{border-bottom: 1px dotted #ccc;margin: 0 20px 30px; line-height: 40px;}
+.main .btn-item{text-align: center;margin-bottom: 71px;}
+.main .virtual-btn{position: absolute;}
+.main .virtual-btn1{left: 569px;top:192px;width: 242px;height: 60px;background: #feb34b;line-height: 60px;}
+.main .virtual-box{height: 26px;line-height: 26px;top: 265px;left: 570px;}
+.main .main-view{background: url("../images/project_bg_1.jpg")no-repeat left top;height: 179px;position: relative;}
+/*.main .main-show{background: url("../images/pro_2-1_bg.jpg")no-repeat left top;height: 3055px;position: relative;}*/
+.main .main-reg{background: url("../images/payment_bg_1.jpg") no-repeat left top;height: 520px;position: relative;}
+.main .main-about{background: url("../images/payment_bg_2.jpg") no-repeat left top;height: 413px;margin: 20px 0 41px;position: relative;}
+.main .page-right{width: 725px;}
+.main .input-message{width: 284px;height: 44px;margin-right: 10px;}
+.main .right-input .input-message-code{width: 150px;height: 40px;}
+.main .right-input .btn-message{width: 142px;height: 44px;border: none;}
+.main .right-input .input-submit{width: 112px;height: 44px;border: none;margin-left: 10px;}
+.main .right-input .care{line-height: 44px;}
+.main .company{background: url("../images/company_bg.jpg") no-repeat left top;height: 616px;}
+.step-1{background: url("../images/pro_step_1.jpg") no-repeat left top;}
+.step-2{background: url("../images/pro_step_2.jpg") no-repeat left top;}
+.step-3{background: url("../images/pro_step_3.jpg") no-repeat left top;}
+
+

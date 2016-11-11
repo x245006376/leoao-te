@@ -1,0 +1,58 @@
+
+.main {  padding: 11px;  background: #fff;  margin-bottom: 100px;  }
+.main .base-info {  }
+.main .base-title {  line-height: 50px;  font-size: 18px;  background: url("../images/red_line_bg.jpg") no-repeat left bottom;  }
+.main .base-info{font-size: 14px;}
+.main .caution{line-height: 73px;padding-left: 60px;color: #db4f33;}
+.main .base-item{line-height: 43px;}
+.main .base-item-1{height: 66px;}
+.main .base-item-2{height: 97px;}
+.main .base-item-3{height: 149px;}
+.main .base-item-4{height: 67px;}
+.main .base-item-5{height: 87px;}
+.main .base-item-6{height: 238px; border-bottom: 1px dotted #cccccc}
+.main .left-text{float: left;width: 130px;text-align: right;padding-right: 18px;}
+.main .left-text span{color: #db4f33}
+.main .text{margin-left: 148px;line-height: 40px;}
+.input1{width: 282px;height: 40px;}
+.input2{width: 143px;height: 44px;background: #f3b611;}
+.input3{width: 150px;height: 40px;}
+.input4{width: 112px;height: 44px;background: #a6a6a6;}
+.input5{width: 102px;height: 44px;}
+.input6{width: 566px;height: 152px;resize: none;}
+.btn1{display: block;margin: 15px 150px;height: 44px; width: 182px;background: #f39c11;}
+.btn{border: none;font-size: 14px;color: #fff;font-weight: bold;}
+.main .demo1{height: 257px; background: url("../images/demo1_bg.jpg") no-repeat 49px 27px;}
+.main .desc{height: 235px;padding-top: 22px;background: url("../images/demo_text_bg.jpg") no-repeat 148px 60px;}
+.main .desc span,.main .desc a{line-height: 38px;}
+.main .treaty{line-height: 100px;height: 80px; width: 280px; margin: 0 auto;overflow: hidden;}
+.main .treaty input{float: left;border: 1px solid #000;width: 12px;height: 12px;margin-top: 44px}
+.main .treaty p{float: left;padding-left: 5px; font-size: 12px;}
+.main .submit{height: 65px;text-align: center;}
+.main .submit input{width: 100px; height: 36px;background: #db4f33;}
+
+.main .base-top{height: 296px;}
+.main .base-top .base-top-left{width: 500px;height: 296px;}
+.main .base-top .base-top-left h3{line-height: 73px;padding-left: 33px;}
+.main .base-top .base-top-left .box{width: 190px;height: 190px;margin-left: 28px;}
+.main .base-top .base-top-left .box{width: 190px;height: 190px;margin-left: 28px;}
+.main .base-top .base-top-left .btn{margin: 79px 0 0 43px;width: 115px;height: 35px;}
+.main .base-top .base-top-right{margin-top:26px;width: 460px;height: 259px;border-left: 1px dotted #ccc;}
+.main .base-top .base-top-right p{line-height: 74px;padding: 50px 0 0 128px;}
+.main .base-top .base-top-right .button1{width: 97px;height: 30px;margin-left: 127px;border: none;background: #f39c11;color: #fff;}
+.main .base-top .base-top-right .button2{width: 77px;height: 30px;margin-left: 17px;border: none;background: #a4a4a4;color: #fff;}
+.main .more-info{height: 909px;}
+.main .more-info h3{line-height: 92px;border-bottom: 3px solid #ccc;padding-left: 102px;font-size: 18px;margin-bottom: 43px;}
+.main .more-info span{font-size: 14px;}
+.main .left-text-3{float: left;width: 300px;text-align: right;padding-right: 18px;}
+.main .left-text-3 span{color: #db4f33}
+.main .more-info .base-item-7{height: 263px;}
+.main .more-info .base-item-7 .box{height: 190px;width: 190px;}
+.main .more-info .base-item-7 .button3{height: 36px;width: 117px;background: #a4a4a4;color: #fff;border: none;margin: 77px 0 0 39px;}
+.main .more-info .button4{width: 242px;height: 60px;border: none;background: #f39c11;color: #fff;margin-left: 362px;}
+.main .text-why{border-bottom: 1px dotted #ccc;border-top: 1px dotted #ccc;height: 150px;}
+.main .text-why h3{color: #e6504e;line-height: 52px;font-size: 18px;}
+.main .text-why p{line-height: 26px;}
+.main .btn-box{text-align: center;padding: 49px 0 50px;}
+.main .btn-box input{width: 100px;height: 36px;border: none;margin: 0 12px;}
+.step-bg-1{background: url("../images/bg")}
