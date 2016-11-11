@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,h1,h2,h3,h4,h5,h6,p,a,input,dd,dt,dl,span{margin:0;padding:0;}
+body{font-family:Arial,"微软雅黑";color:#666666;font-size:12px;}
+a{text-decoration:none;color:#666666;}
+li{list-style:none;}
+input{border:none;}
+i,img,time,h3{display:block;}
+.clear{clear:both;}
+input{display:inline-black;}
+i{font-style:normal;}
+.clearfix:after{
+	content:'200B';
+	clear:both;
+	font-size:0;
+	height:0;
+	display:block;	
+	}
+	
+.clear{clear:both;}
+img{border:0;}
+.inner{width:1210px; margin:0 auto;}

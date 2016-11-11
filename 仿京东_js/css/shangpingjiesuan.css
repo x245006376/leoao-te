@@ -1,0 +1,43 @@
+
+.inner{
+    width: 800px; margin: 0 auto}
+table{collapse:none;border-collapse:collapse; }
+td{padding: 0 25px}
+span{color:#1965b3; }
+a{ cursor: pointer;}
+.head p{height: 42px; line-height: 42px;}
+.head h5 a{ display:inline-block;
+    height: 24px;font-size:14px; width: 145px; line-height: 24px; background: #e4e4e4}
+.head h5 .ac{background: #ff6600;color: #fff;}
+.tab_head{background:#fff;border-bottom: 3px #a7cbff solid}
+.tab_head span{padding:0 7px 0 10px;}
+.tab_even{background:#e2f2ff; border-top:1px #d1ecff solid; border-bottom:1px #d1ecff solid; margin-bottom: 10px; line-height: 90px; text-align: center }
+.tab_even td{border-left:1px #fff solid }
+.tab_odd{line-height: 24px;}
+.search{color: red}
+.hover{background: deeppink}
+.buttonA{border: 1px  #000 solid;padding:1px 2px; margin: 0 5px; }
+.total_tab{position: relative; height: 100px;}
+.total_tab input{
+    position: relative;
+    left: 0;
+    top: 10px;
+}
+.total_tab .p1{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.total_tab .p2{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.total_tab img{
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+.total_tab:after{content:''; clear: both}

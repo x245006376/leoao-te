@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*div{*/
+            /*width: 200px;*/
+            /*height:200px;*/
+            /*background-color: #4eae4c;*/
+            /*position: absolute;*/
+            /*left: 50%;*/
+            /*top: 50%;*/
+            /*transform: translate(-50%,50%);*/
+
+        /*}*/
+    </style>
+    <script>
+
+        $(function(){
+
+            $("#score").text(parseInt(Math.random() *(6000 - 3000) + 3000));
+
+
+            var tab = $("#turntable");
+            var point = $("#pointer");
+            var wt = tab.width();
+            var ht = tab.height();
+
+            var wp = point.width();
+            var hp = point.height();
+            tab.offset({left:100, top:100});
+            $("div").offset({left:550, top:150});
+            point.offset({left: (wt-wp)/2 + tab.offset().left, top: (ht-hp)/2 + tab.offset().top});
+
+            var deg = 0;
+            var turn = false;
+
+            var intervalId;
+            $(window).click(function(){
+                turn = !turn;
+                if (turn) {
+
+                    intervalId = setInterval(function(){
+                        deg += 15;
+                        tab.css("transform", "rotate(" + deg + "deg)");
+                    } , 100);
+                } else {
+                    clearInterval(intervalId);
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+    <div class="get">本次购物您获取了<span id="score">0</span>积分.</div>
+    <div >
+        <img id="turntable" src="images/turntable.png"/>
+        <img id="pointer" src="images/pointer.png"/>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+/*错误弹窗------------------------------------------------*/
+.err_Box{width:300px; height:200px; background:#ccc; position:absolute;}
+.err_Box p{text-align:center; font-size:40px; color:#F00}
+.err_Box button{width:100px; height:50px; margin-left:50%; margin-left:100px; }
+
+
+/*蒙版------------------------------------------------*/
+.modal{width:100%; height:100%; position:fixed; background:#000; opacity:0.3; top:0; left:0; z-index:20; display:none;}
+
+
+/*带蒙版,可拖拽的登录框------------------------------------------------*/
+.logoing a{width:20px; text-align:center; line-height:20px; height:20px; position:absolute; top:10px; right:8px; color:#fff;text-decoration:none;}
+.openBtn{width:100px;height:40px;border-radius:5px;display:block;margin:100px auto;}
+.logoing{width:400px; height:220px; background:#fff; z-index:10; border:1px solid #000; position:relative; z-index:30; position:absolute; left:0; top:0;}
+.logoing input{width:200px; height:30px; border:1px solid #ccc;}
+.logoing p{padding-left:50px; padding-top:20px; position:relative; line-height:30px;}
+.logoing input{position:absolute;left:110px; top:20px; }
+.logoing h4{height:40px; line-height:40px; background:#ccc; padding-left:10px; cursor:move;}
+.logoing .logonBtn{width:100px; height:30px; margin-left:66px;}
+.modal{width:100%; height:100%; position:fixed; background:#000; opacity:0.3; top:0; left:0; z-index:20; display:none;}
+
+
+/*slide轮播图样式*/
+#slide{overflow:hidden;position:relative;}
+#slide ul{position:absolute;left:0px;}
+#slide ul li{float:left;}
+#slide .color{background:rgba(0,153,255,0.7);}
+#slide .but{position:absolute; bottom:0px;left:250px;}
+#slide .to{width:40px; height:90px; line-height:90px; text-align: center; font-size:40px; font-weight:bold; background-color:rgba(0,0,0,0.5); color:#fff;position:absolute;top:180px; cursor:pointer;}
+/*楼层轮播样式*/
+.floor1-slide{width:395px; height: 236px;left: 330px;position:absolute;overflow:hidden;}
+.floor1-slide ul{position:absolute;left:0px;}
+.floor1-slide ul li{float:left;border:none;}
+.floor1-slide .but .color{background:red;}
+.floor1-slide .but{width:140px; height:50px;position:absolute; bottom:-280px;left:160px;}
+.floor1-slide .but li{width:15px; height:15px;text-align: center;line-height: 20px;border-radius: 50%;margin: 5px;background: #000;cursor: pointer;}
+.floor1-slide .to{width:40px; height:90px; line-height:90px; text-align: center; font-size:40px; font-weight:bold; background-color:rgba(0,0,0,0.5); color:#fff;position:absolute;top:115px; cursor:pointer;}
+.floor1-slide .to_left{left:-40px;}
+.floor1-slide .to_right{left:439px;}
+
+
+
