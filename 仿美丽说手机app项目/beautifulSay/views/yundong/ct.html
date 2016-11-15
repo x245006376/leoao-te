@@ -1,0 +1,23 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/home" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                大长腿
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="sport">
+        <p class="p">没有大长腿不是你的错，但是穿不出大长腿你就大错特错！几个妙招让你拥有超模迷人细长腿。
+        </p>
+        <ul class="row" ng-repeat="item in images">
+            <li class="col">
+                <img ng-src="{{item.img}}" style="width: 100%;">
+            </li>
+            <li class="col">
+                <img ng-src="{{item.img1}}" style="width: 100%;">
+            </li>
+        </ul>
+
+    </ion-content>
+</ion-view>

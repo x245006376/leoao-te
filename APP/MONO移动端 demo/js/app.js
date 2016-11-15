@@ -1,0 +1,82 @@
+/**
+ * Created by Administrator on 2016/6/10.
+ */
+//����·�ɺ�״̬��
+app.config(function($stateProvider,$urlRouterProvider,$ionicConfigProvider){
+    $stateProvider.state("tabs",{
+        url:"/tabs",
+        abstract:true,
+        templateUrl:"views/tabs/tabs.html"
+    });
+    $stateProvider.state("tabs.whatsNew",{
+        url:"/whatsNew",
+        views:{
+            "tabs_whatsNew":{
+                templateUrl:"views/tabs/whatsNew/whatsNew.html",
+                controller:"whatsNewCtrl"
+            }
+        }
+    });
+    $stateProvider.state("tabs.article",{
+        url:"/article/:articleID",
+        views:{
+            "tabs_whatsNew":{
+                templateUrl:"views/tabs/whatsNew/article.html",
+                controller:"articleCtrl"
+            }
+        }
+    });
+    $stateProvider.state("tabs.subjects",{
+        url:"/subjects",
+        views:{
+            "tabs_subjects":{
+                templateUrl:"views/tabs/subjects/subjects.html"
+            }
+        }
+    });
+    $stateProvider.state("tabs.gallery",{
+        url:"/gallery",
+        views:{
+            "tabs_gallery":{
+                templateUrl:"views/tabs/gallery/gallery.html",
+                controller:"galleryCtrl"
+            }
+        }
+    });
+    $stateProvider.state("myFav",{
+        url:"/myFav",
+        templateUrl:"views/my/myFav/myFav.html",
+        controller:"myFavCtrl"
+    });
+    $stateProvider.state("myFriends",{
+        url:"/myFriends",
+        templateUrl:"views/my/myFriends/myFriends.html",
+        controller:"myFriendsCtrl"
+    });
+    $stateProvider.state("myInfo",{
+        url:"/myInfo",
+        templateUrl:"views/my/myInfo/myInfo.html",
+        controller:"myInfoCtrl"
+    });
+    $stateProvider.state("myConfig",{
+        url:"/myConfig",
+        templateUrl:"views/my/myConfig/myConfig.html"
+    });
+
+    $urlRouterProvider.otherwise("/tabs/whatsNew");
+
+
+    $ionicConfigProvider.platform.ios.tabs.style('standard');
+    $ionicConfigProvider.platform.ios.tabs.position('bottom');
+    $ionicConfigProvider.platform.android.tabs.style('standard');
+    $ionicConfigProvider.platform.android.tabs.position('bottom');
+
+    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+    $ionicConfigProvider.platform.android.navBar.alignTitle('center');
+
+    $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+    $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
+
+    $ionicConfigProvider.platform.ios.views.transition('ios');
+    $ionicConfigProvider.platform.android.views.transition('android');
+});

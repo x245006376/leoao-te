@@ -1,0 +1,24 @@
+
+<ion-view id="begin-view">
+    <!--auto-play="true" 是否自动播放
+ slide-interval="2000" 切换时间的调整 默认为4000
+  show-pager="true" 是否显示分页器
+  active-slide="activeIndex" 当幻灯片切换时，这个变量会同步反应到当前幻灯片页索引号
+   pager-click="pagerClick(index)" 分页器点击事件
+   on-slide-changed="onSlideChanged($index)" 幻灯片切换事件
+-->
+    <ion-slide-box show-pager="false"
+                   auto-play="true"
+                   slide-interval="3000"
+                   class="ion-slide-box"
+                   on-slide-changed="onSlideChanged2()"
+    >
+        <ion-slide class="ion-slide">
+            <img src="images/slide_1.png" alt="美丽说开场动画">
+        </ion-slide>
+        <ion-slide class="ion-slide">
+            <img src="images/slide_2.png" alt="美丽说开场动画">
+            <button ui-sref="tabs.home" id="btn" ng-show="false"></button>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>

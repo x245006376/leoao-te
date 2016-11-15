@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>details</title>
+    <link href="../../css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/details.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/reveal.css" rel="stylesheet" type="text/css"/>
+    <link href="../../css/pop.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../../css/landingWindow.css">
+    <script src="../../js/jquery-1.6.min.js"></script>
+    <script src="../../js/public1.js"></script>
+    <script src="../../js/reveal.js"></script>
+    <script src="../../js/add.js"></script>
+    <script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+    <script>
+        window.onload = function () {
+            hxsd_add();
+
+            //登录框
+
+            $(".big-link").click(function(){
+                $(".landwindow").removeClass("displaynone")
+            });
+            $("#closeWindow").click(function(){
+                $(".landwindow").addClass("displaynone")
+            });
+            $("label").click(function () {
+                $(this).toggleClass("checked", "")
+            });
+
+
+            $(".loginpage").click(function () {
+                $(".loginpage").addClass("tabstoggle");
+                $(".register").removeClass("tabstoggle");
+                $("#logintabs").show();
+                $("#registertabs").hide();
+            });
+            $(".register").click(function () {
+                $(".register").addClass("tabstoggle");
+                $(".loginpage").removeClass("tabstoggle");
+                $("#logintabs").hide();
+                $("#registertabs").show();
+            });
+            $('input, textarea').placeholder();
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="inner overflowH clearFloat">
+        <div><a class="big-link" data-reveal-id="myModal01" data-animation="fade">请登录</a><a href="../../views/registerpage/registerpage.html">免费注册</a></div>
+        <ul class="overflowH">
+            <li><a href="../../index.html">我的合电台</a></li>
+            <li><a href="../../views/order/collect.html">我的订单</a></li>
+            <li><a href="../../views/order/collect.html">我的收藏</a></li>
+            <li><a href="javascript:;">客服中心</a></li>
+            <li><a href="javascript:;">在线咨询</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="inner clearFloat">
+        <h1><a href="../../index.html"><img src="../../images/header_logo.jpg" alt=""></a></h1>
+        <a href="buyCar.html" class="shop">购物车<span>&gt;</span><i>3</i></a>
+        <div class="search"><input type="text" placeholder="请输入产品关键字或型号"><a href="javascript:;">搜索</a></div>
+        <a href="javascript:;" class="category">商品分类</a>
+        <div class="popCategory">
+            <ul>
+                <li><a href="javascript:;">电脑整机<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">办公设备<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">电脑配件<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">数码影音<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">移动智能<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">网络设备<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">信息安全<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">服务器<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">存储<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">软件<img src="../../images/home_sanjiao.png"/></a></li>
+            </ul>
+            <div class="categoryInfo">
+                <dl>
+                    <dt><a href="###">笔记本</a></dt>
+                    <dd><a href="###" class="fontRedColor">超极本</a><a href="###">游戏本</a><a href="###">商用本</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">平板电脑</a></dt>
+                    <dd><a href="###">iPad</a><a href="###">surface</a><a href="###">kindle</a><a href="###">3G/4G上网</a><a href="###">Android平板电脑</a><a href="###">Windows平板电脑</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">台式机</a></dt>
+                    <dd><a href="###">商用电脑</a><a href="###">家用电脑</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">一体机</a></dt>
+                    <dd><a href="###">家用一体机</a><a href="###">商用一体机</a><a href="###">触控一体机</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--详情页内容区-->
+
+<div class="detailMain">
+    <div class="inner">
+        <div class="deTop">
+            <p><a href="javascript:;">首页</a>　&gt;　<a href="javascript:;">所有分类</a>　&gt;　<a href="javascript:;">电脑整机
+            </a>　&gt;　
+                <a href="javascript:;">笔记本</a>　&gt;　<a href="search.html">超极本</a>　&gt;　<a
+                        href="javascript:;">惠普（HP）PowerEdge R420服务器 2403/8G/1T*2（冷）…</a></p>
+        </div>
+        <div class="deMiddle">
+            <div class="deMiddleLeft">
+                <div class="deMiddlePic">
+                    <img class="deNone deBlock" src="../../images/liudepic1.jpg"/>
+                    <img class="deNone" src="../../images/liudepic2.jpg"/>
+                    <img class="deNone" src="../../images/liudepic3.jpg"/>
+                    <img class="deNone" src="../../images/liudepic4.jpg"/>
+                    <img class="deNone" src="../../images/liudepic5.jpg"/>
+                </div>
+                <ul>
+                    <li class="deRed"><a href="javascript:;"><img src="../../images/liudepic1.jpg"/></a></li>
+                    <li><a href="javascript:;"><img src="../../images/liudepic2.jpg"/></a></li>
+                    <li><a href="javascript:;"><img src="../../images/liudepic3.jpg"/></a></li>
+                    <li><a href="javascript:;"><img src="../../images/liudepic4.jpg"/></a></li>
+                    <li><a href="javascript:;"><img src="../../images/liudepic5.jpg"/></a></li>
+                </ul>
+            </div>
+            <div class="deMiddleRight">
+                <h2>戴尔（Dell）PowerEdge R420服务器 2403/8G/1T*2（冷）SAS/H310/DVDR-
+                    W/单电/550W/3年硬盘不返还/3NBD</h2>
+                <span>若有增配需求，请致电合电站，服务热线：400-8703380</span>
+                <div class="dePrice">
+                    <p>价格：<span>2699.00</span></p>
+                    <div class="dePriceBot">
+                        <p>购买说明：十台起售</p>
+                        <span>已售：360台</span>
+                    </div>
+                </div>
+                <div class="deParameter">
+                    <p>基本配置参数</p>
+                    <ul>
+                        <li>产品类别：1u机架式</li>
+                        <li>产品结构：暂无</li>
+                        <li>CPU型号：暂无</li>
+                        <li>标配CPU数量：暂无</li>
+                        <li>内存类型：暂无</li>
+                        <li>内存容量： 8G 硬盘</li>
+                        <li>接口类型：暂无标配</li>
+                        <li>硬盘容量：1T*2（冷）SAS</li>
+                    </ul>
+                </div>
+                <div class="deShop">
+                    <div class="deAmount">
+                        <p id="deNum">10</p>
+                        <div class="deAdd"><a href="javascript:;">+</a></div>
+                        <div class="deSubtract"><a href="javascript:;">-</a></div>
+                    </div>
+                    <div class="deShopBtn"><a href="javascript:;" class="big-link" data-reveal-id="myModal" data-animation="fade">加入购物车</a></div>
+                    <div id="myModal" class="reveal-modal">
+                        <div class="cartPop positionCenter pop">
+                            <div class="cartPopTitle redBg">
+                                <h3 class="fl"><i></i>加入购物车</h3>
+                                <span class="fr closeBtn close-reveal-modal"></span>
+                            </div>
+                            <div class="cartPopSuccessAdd">
+                                <i class="fl"></i>
+                                <div class="cartPopSuccessAddTittle fl">
+                                    <h3>成功加入购物车</h3>
+                                    <a href="buyCar.html" class="a1">去结算</a>
+                                    <span></span>
+                                    <a href="../../index.html" class="a2">继续购物</a>
+                                </div>
+                            </div>
+                            <div class="guessYouLike">
+                                <h3>猜你喜欢</h3>
+                                <ul>
+                                    <li><a href="#"><i class="popImgBorder fl"><img src="../../images/liu_guessYouLike.png"/></i><span>￥2800.00</span><br/><b>HP惠普15-bd-001tx/x5p5</b></a></li>
+                                    <li><a href="#"><i class="popImgBorder fl"><img src="../../images/liu_guessYouLike.png"/></i><span>￥2800.00</span><br/><b>HP惠普15-bd-001tx/x5p5</b></a></li>
+                                    <li><a href="#"><i class="popImgBorder fl"><img src="../../images/liu_guessYouLike.png"/></i><span>￥2800.00</span><br/><b>HP惠普15-bd-001tx/x5p5</b></a></li>
+                                    <li><a href="#"><i class="popImgBorder fl"><img src="../../images/liu_guessYouLike.png"/></i><span>￥2800.00</span><br/><b>HP惠普15-bd-001tx/x5p5</b></a></li>
+                                    <li class="liMarginRightClear"><a href="#"><i class="popImgBorder fl"><img src="../../images/liu_guessYouLike.png"/></i><span>￥2800.00</span><br/><b>HP惠普15-bd-001tx/x5p5</b></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deHint">温馨提示：该商品10台起售，如购买数量较大可联系合电站进行询价。</div>
+            </div>
+        </div>
+        <div class="deBottom">
+            <!--侧边栏-->
+            <div class="sidebar">
+                <div class="sidebarPicBig">
+                    <img src="../../images/liuTebietuijian.jpg"/>
+                </div>
+                <div class="sidebarPic">
+                    <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                    <a href="details.html"><span>¥2800.00</span></a>
+                    <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                        8pA/i3超极本</p></a>
+                    <div class="sidebarWire"></div>
+                </div>
+
+                <div class="sidebarPic">
+                    <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                    <a href="details.html"><span>¥2800.00</span></a>
+                    <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                        8pA/i3超极本</p></a>
+                    <div class="sidebarWire"></div>
+                </div>
+
+                <div class="sidebarPic">
+                    <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                    <a href="details.html"><span>¥2800.00</span></a>
+                    <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                        8pA/i3超极本</p></a>
+                </div>
+            </div>
+            <!--商品介绍-->
+            <div class="deBottomRight">
+                <div class="deBottomRightTop" id="deBottomRightTop">
+                    <ul>
+                        <li class="deBottomRightClick"><a href="javascript:;">商品介绍</a></li>
+                        <li><a href="javascript:;">规格参数</a></li>
+                        <li><a href="javascript:;">评价</a></li>
+                        <li class="deBottomLi"><a href="javascript:;">订购说明</a></li>
+                    </ul>
+                </div>
+                <div id="deBottomRightContent">
+                    <div class="deProduct deNone deBlock">
+                        <div class="deProductTop">
+                            <p>基本配置参数</p>
+                            <ul>
+                                <li>产品类别：1u机架式</li>
+                                <li>产品结构：暂无</li>
+                                <li>CPU型号：暂无</li>
+                                <li>标配CPU数量：暂无</li>
+                                <li>内存类型：暂无</li>
+                                <li>内存容量： 8G 硬盘</li>
+                                <li>接口类型：暂无标配</li>
+                                <li>硬盘容量：1T*2（冷）SAS</li>
+                            </ul>
+                        </div>
+                        <h2>特点介绍</h2>
+                        <div class="deProductCha"></div>
+                        <h3>精美图集</h3>
+                        <div class="deProductPic"></div>
+                        <div class="deProductPic"></div>
+                        <div class="deProductPic"></div>
+                    </div>
+                    <div class="deBottomRightPa deNone">
+                        <ul>
+                            <li>主体</li>
+                            <li>
+                                <div class="dePaLeft">系列</div>
+                                <div class="dePaRight">拯救者-15</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">型号</div>
+                                <div class="dePaRight">拯救者ISK</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">颜色</div>
+                                <div class="dePaRight">黑色</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">平台</div>
+                                <div class="dePaRight">Intel</div>
+                            </li>
+                            <li>操作系统</li>
+                            <li>
+                                <div class="dePaLeft">操作系统</div>
+                                <div class="dePaRight">windows10</div>
+                            </li>
+                            <li>处理器</li>
+                            <li>
+                                <div class="dePaLeft">CPU类型</div>
+                                <div class="dePaRight">第六代智能英特尔酷睿i5四核处理器</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">CPU型号</div>
+                                <div class="dePaRight">i5-6300HQ</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">CPU速度</div>
+                                <div class="dePaRight">2.3GHZ</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">核心</div>
+                                <div class="dePaRight">四核</div>
+                            </li>
+                            <li>内存</li>
+                            <li>
+                                <div class="dePaLeft">内存容量</div>
+                                <div class="dePaRight">8GB</div>
+                            </li>
+                            <li>
+                                <div class="dePaLeft">内存类型</div>
+                                <div class="dePaRight">DDR4-2133MHz</div>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="deNone">评价</div>
+                    <div class="deNone">订购说明</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="inner overflowH">
+        <ul class="clearFloat">
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="overflowH">
+            <a href="javascript:;">合电站简介</a>
+            <a href="javascript:;">合作伙伴</a>
+            <a href="javascript:;">法律声明</a>
+            <a href="javascript:;">联系方式</a>
+        </div>
+        <p>Copyright &copy; 2000-2015 一新科技 京ICP备09004081号-2 京公网安备110108400105号</p>
+    </div>
+</div>
+<!--登录框-->
+<div id="myModal01" class="reveal-modal">
+    <div class="landwindow displaynone">
+        <div class="windowtop ">
+            <p class="fl">欢迎您登录合电站会员</p>
+            <p id="closeWindow" class="fr close-reveal-modal">X</p>
+        </div>
+        <div class="windowmain">
+            <ul>
+                <li class="loginpage fl tabstoggle">登录</li>
+                <li class="register fl ">注册</li>
+            </ul>
+
+            <div id="logintabs">
+                <input class="inputclass " id="username" type="text" placeholder="用户名/手机号/邮箱">
+                <input class="inputclass" id="password" type="password" placeholder="密码">
+                <div class="checkbox">
+                    <input id="automaticLogon" type="checkbox">
+                    <label for="automaticLogon"></label>
+                </div>
+                <p class="lostpassword">下次自动登录<span>|</span><a href="#">忘记密码?</a></p>
+                <input id="loginbtn" type="button" value="立即登录">
+            </div>
+
+            <div id="registertabs">
+                <input class="inputclass" id="company" type="text" placeholder="公司名称">
+                <input class="inputclass" id="phone" type="text" placeholder="手机号">
+                <input class="inputclass fl" id="verification" type="text" placeholder="验证码">
+                <div class="verificationMessage fl">获取短信验证码</div>
+                <input class="inputclass" id="setPassword" type="password" placeholder="设置密码">
+                <input class="inputclass" id="verifyPassword" type="password" placeholder="确认密码">
+                <div class="checkbox checkboxmargintop38px">
+                    <input id="ClearanceAgreement" type="checkbox">
+                    <label for="ClearanceAgreement"></label>
+                </div>
+                <p class="registerword">我已阅读并接受<a href="#">《合电站用户协议》</a></p>
+                <input id="registerbtn" type="button" value="同意协议并注册">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

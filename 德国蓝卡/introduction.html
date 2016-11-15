@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蓝卡介绍</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/style.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script>
+        window.onload=function(){
+            tab('introUl');
+            $('#left').click(function () {
+                $('#introBanner ul ').append($('#introBanner ul li:first'))
+            })
+            $('#right').click(function () {
+                $('#introBanner ul ').prepend($('#introBanner ul li:last'))
+            })
+
+        }
+    </script>
+</head>
+<body>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li ><a href="index.html">首　页</a></li>
+            <li class="active"><a href="introduction.html">蓝卡介绍</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="products.html">产品展示</a></li>
+            <li><a href="technology.html">技术中心</a></li>
+            <li><a href="progam.html">工程案例</a></li>
+            <li><a href="service.html">服务中心</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="contact.html">联系蓝卡</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="inner">
+        <div class="bannerTop clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="logoTel">
+                <img src="images/tel.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">中文版</a></li>
+                <li>|</li>
+                <li><a href="#">English</a></li>
+                <li>|</li>
+                <li><a href="#">Россия</a></li>
+            </ul>
+        </div>
+        <div class="bannerImg" id="introBanner">
+            <button id="left" class="left">&lt;</button>
+            <button id="right" class="right">&gt;</button>
+            <ul>
+                <li><a href="#"><img src="images/introductionBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/techBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/productsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/newsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/serviceBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/programBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/contactBanner_03.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="childContent">
+    <div class="inner">
+        <div class="childContentLeft">
+            <div class="contentLeftTitle">
+                <h2>蓝卡文化</h2>
+                <ul class="titleLocation">
+                    <li class="active">您当前位置:</li>
+                    <li><a href="#">首页</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">蓝卡介绍</a></li>
+                </ul>
+            </div>
+            <div class="culture">
+                <dl>
+                    <dt>企业宗旨：</dt>
+                    <dd>研究和开发断桥铝产品，服务于建筑、交通等领域，致力于提供环保、节能、健康的产品。</dd>
+                    <dd>满足顾客要求和市场需求，客户利益至上</dd>
+                    <dd>以崇高的道德准则，严格履行行业规范从事各种经营活动，关注客户、员工相关利益，承担社会责任，促进社会和谐。</dd>
+                </dl>
+                <dl>
+                    <dt>企业愿景：</dt>
+                    <dd>成为中国铝型材行业的领导品牌。</dd>
+                    <dd>成为全球有影响力的断桥铝产品专业研发制造商与服务商。</dd>
+                    <dd>成为世界上最具竞争力和被社会公认的卓越品牌企业。</dd>
+                    <dd>塑造“专、优、快、严”的企业文化。</dd>
+                </dl>
+                <dl  class="active clearfix">
+                    <dt>企业核心价值观：</dt>
+                    <dd><span>诚信：</span>企业立足之本 </dd>
+                    <dd><span>创新：</span>企业发展之源</dd>
+                    <dd><span>责任：</span>企业修身之德</dd>
+                    <dd><span>共赢：</span>企业生存之道</dd>
+                </dl>
+                <dl>
+                    <dt>企业经营理念：</dt>
+                    <dd><span>品质理念：</span>质量是蓝卡价值和尊严的起点 </dd>
+                    <dd><span>研发理念：</span>市场需求是蓝卡研发的根本方向和指针</dd>
+                    <dd><span>制造理念：</span>追求产业专业化和产品多元化</dd>
+                    <dd><span>人才理念：</span>人才是企业发展的核心竞争力</dd>
+                </dl>
+                <dl>
+                    <dt>企业文化：</dt>
+                    <dd><span>专：</span>专注、专业于断桥铝研发与制造，在产业领域内做深做细，在产业规模与品牌上做强做大。 </dd>
+                    <dd><span>优：</span>品质优秀是蓝卡屹立不倒的根基。</dd>
+                    <dd><span>快：</span>满足市场需求快、生产交货快是蓝卡最突出的特色。</dd>
+                    <dd><span>严：</span>管理规范是企业健康、持续发展的根本保障。 </dd>
+                </dl>
+            </div>
+
+        </div>
+        <div class="childContentRight">
+            <div class="contentLeftTitle asideTitle">
+                <h2>蓝 卡 介 绍 </h2>
+            </div>
+            <ul id="introUl">
+                <li>蓝卡简介</li>
+                <li>总裁致词</li>
+                <li class="active">蓝卡文化</li>
+                <li>组织架构</li>
+                <li>地理位置</li>
+            </ul>
+            <div class="jiaMen">
+                <img src="images/jiamengrexian.png" alt="">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="inner">
+        <div class="footerImg">
+            <img src="images/footerImg_03.jpg">
+        </div>
+        <div class="footerP">
+            <p>2010年 德国蓝卡（香港）集团有限公司 版权所有</p>
+            <p>全国免费热线：400-678-3786  电话：00852-21580629   传真：00852-35719160</p>
+            <p>地址：香港上环苏杭接49-51号建安商业大厦7楼</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

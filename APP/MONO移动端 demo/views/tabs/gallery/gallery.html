@@ -1,0 +1,34 @@
+<ion-view view-title="你一定抓不住这个梗" class="animated fadeIn">
+    <ion-content>
+        <ion-refresher class="ionic-refresher-with-text" on-refresh="refreshG()"
+                       pulling-text="下拉可以刷新哦" refreshing-text="努力刷新中..." pulling-icon="ion-radio-waves">
+
+        </ion-refresher>
+        <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true">
+            <ion-slide>
+                <img src="images/banner_02_03.jpg" style="min-height:150px;width: 100%">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/banner_03.jpg" style="min-height:150px;width: 100%">
+            </ion-slide>
+        </ion-slide-box>
+        <ion-item>
+            尽情开启脑洞，给图片配上最神的文字
+        </ion-item>
+        <li class="list-borderless list" collection-repeat="item in gallery">
+            <ion-item class="item item-avatar" >
+                <img ng-src={{item.avatar}} />
+                <span style="font-weight:bold;font-family: arial, '微软雅黑';">{{item.author}}</span>
+                <p>{{item.time}}发布</p>
+                <ion-option-button class="button-assertive">Edit</ion-option-button>
+            </ion-item>
+            <div class="item item-image">
+                <img style="min-height:331px" ng-src="{{item.pic}}" />
+            </div>
+            <div class="item button-bar">
+            </div>
+        </li>
+        <ion-infinite-scroll distance="1%" on-infinite="infiniteScrollG()" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

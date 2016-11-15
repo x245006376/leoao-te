@@ -1,0 +1,44 @@
+<ion-view view-title="逛逛有趣的事" class="animated fadeIn">
+<ion-content class="has-header">
+    <ion-refresher class="ionic-refresher-with-text" on-refresh="refresh()"
+                   pulling-text="下拉可以刷新哦" refreshing-text="努力刷新中..." pulling-icon="ion-radio-waves">
+
+    </ion-refresher>
+    <ion-slide-box auto-play="true" slide-interval="2000" does-continue="true">
+        <ion-slide>
+            <img src="images/banner_02_03.jpg" style="min-height:150px;width: 100%">
+        </ion-slide>
+        <ion-slide>
+            <img src="images/banner_03.jpg" style="min-height:150px;width: 100%">
+        </ion-slide>
+    </ion-slide-box>
+    <ion-list>
+    <li class="list-borderless list" collection-repeat="item in articles">
+            <ion-item class="item item-avatar themeColor pullingArrow">
+                <img ng-src={{item.avatar}} />
+                <span class="light" style="font-weight:bold;font-family: arial, '微软雅黑';border-radius:5px;background-color: rgba(0,0,0,.1);padding: 3px 5px">{{item.author}}</span>
+                <p style="color:#ffe87c">{{item.time}}发布</p>
+                <ion-option-button class="button-energized" ng-click="addAttention(item)">关注造物主</ion-option-button>
+            </ion-item>
+        <div class="item item-image" style="position: relative">
+            <img style="min-height:331px" ng-src={{item.thumb}} ui-sref="tabs.article({articleID:item.articleID})"/>
+            <div class="audio" ng-if="item.music"></div>
+        </div>
+        <div class="item tabs tabs-icon-left" >
+                <a class="tab-item" ng-click="addFav(item)">
+                    <i class=" icon ion-android-favorite" ></i>
+                </a>
+                <a class="tab-item" ng-click="like(item)">
+                    <i class=" icon ion-thumbsup icon-left" ></i>{{item.likes}}
+                </a>
+                <a class="tab-item">
+                    <i class=" icon ion-android-textsms icon-left"></i>{{item.comments}}
+                </a>
+        </div>
+
+        </li>
+        <ion-infinite-scroll distance="1%" on-infinite="infiniteScroll()" immediate-check="false">
+        </ion-infinite-scroll>
+    </ion-list>
+</ion-content>
+</ion-view>

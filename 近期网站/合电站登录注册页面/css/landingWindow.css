@@ -1,0 +1,33 @@
+
+.landwindow{border: 4px solid #aaa;width: 392px;border-collapse: collapse;background: #fff;}
+.windowtop{ height: 27px;background: #e5e5e5;padding: 13px 19px 0 17px;}
+.windowtop p{font-size: 16px;}
+
+.windowmain{padding-left: 46px;}
+.windowmain ul{width: 300px;height: 40px;border-bottom: 1px solid #e5e5e5;margin-top: 13px;}
+.loginpage{text-align: center;width: 108px;height:38px;line-height: 38px;font-size: 18px;border: 1px solid #e5e5e5;border-bottom: none;margin-top: 1px;margin-left: 35px;}
+.register{text-align: center;width: 108px;height:38px;line-height: 38px;font-size: 18px;border: 1px solid #e5e5e5;border-bottom: none;margin-top: 1px;margin-left: 12px;}
+.tabstoggle{border-top:2px solid #f84748;border-bottom: 1px solid #fff;color: #f84748;height: 37px;position: relative;}
+#registertabs{display: none}
+
+.inputclass{width: 288px; height: 38px; border: 1px solid #e5e5e5;padding-left: 10px;font-size: 14px;line-height: 38px;margin-top: 20px;}
+
+#password{margin-top: 20px;margin-right: 46px;}
+.colorblack{color: #000;}
+#automaticLogon{margin-top: -13px;float:left;}
+.checkbox{width: 16px;height: 16px;overflow: hidden;margin-top: 20px; float: left;}
+label{background: url("../images/re_checkboxflase.jpg") no-repeat;display: block;width: 16px;height: 16px;}
+.checked{background: url("../images/re_checkboxtrue.jpg") no-repeat;padding-left: 16px;}
+.lostpassword{margin:20px 0 0 27px;font-size: 14px;}
+.lostpassword span{margin: 0 20px;color: #bfbfbf;}
+.lostpassword a{color: #000}
+#loginbtn{width: 300px;height: 40px;background: #f84748;color: #fff;font-size: 18px;margin:52px 0 63px -16px;}
+
+.checkboxmargintop38px{margin-top: 38px}
+#verification{width: 158px}
+.verificationMessage{width:103px;height: 38px;border: 1px solid #e5e5e5;margin:20px 0 0 10px;padding-left:15px;font-size:14px;line-height: 38px;color: #a4a4a4;}
+#verifyPassword{margin-right: 46px;}
+#ClearanceAgreement{margin-top: -13px;float:left;}
+.registerword{margin:39px 0 0 22px;font-size: 14px;}
+.registerword a{color: #1a7fcd}
+#registerbtn{width: 300px;height: 40px;background: #f84748;color: #fff;font-size: 18px;margin:52px 0 17px -16px;}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.6.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/landingWindow.css" rel="stylesheet">
+</head>
+<body>
+    <div class="landwindow">
+        <div class="windowtop">
+            <p class="fl">欢迎您登录合电站会员</p>
+            <p id="closeWindow" class="fr">X</p>
+        </div>
+        <div class="windowmain">
+            <ul>
+                <li class="loginpage fl tabstoggle">登录</li>
+                <li class="register fl ">注册</li>
+            </ul>
+
+            <div id="logintabs">
+                <input class="inputclass " id="username" type="text" placeholder="用户名/手机号/邮箱">
+                <input class="inputclass" id="password" type="password" placeholder="密码">
+                <div class="checkbox">
+                    <input id="automaticLogon" type="checkbox">
+                    <label for="automaticLogon"></label>
+                </div>
+                <p class="lostpassword">下次自动登录<span>|</span><a href="#">忘记密码?</a></p>
+                <input id="loginbtn" type="button" value="立即登录">
+            </div>
+
+            <div id="registertabs">
+                <input class="inputclass" id="company" type="text" placeholder="公司名称">
+                <input class="inputclass" id="phone" type="text" placeholder="手机号">
+                <input class="inputclass fl" id="verification" type="text" placeholder="验证码">
+                <div class="verificationMessage fl">获取短信验证码</div>
+                <input class="inputclass" id="setPassword" type="password" placeholder="设置密码">
+                <input class="inputclass" id="verifyPassword" type="password" placeholder="确认密码">
+                <div class="checkbox checkboxmargintop38px">
+                    <input id="ClearanceAgreement" type="checkbox">
+                    <label for="ClearanceAgreement"></label>
+                </div>
+                <p class="registerword">我已阅读并接受<a href="#">《合电站用户协议》</a></p>
+                <input id="registerbtn" type="button" value="同意协议并注册">
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $("label").click(function () {
+                $(this).toggleClass("checked", "")
+            });
+
+
+            $(".loginpage").click(function () {
+                $(".loginpage").addClass("tabstoggle");
+                $(".register").removeClass("tabstoggle");
+                $("#logintabs").show();
+                $("#registertabs").hide();
+            });
+            $(".register").click(function () {
+                $(".register").addClass("tabstoggle");
+                $(".loginpage").removeClass("tabstoggle");
+                $("#logintabs").hide();
+                $("#registertabs").show();
+            });
+            $('input, textarea').placeholder();
+        })
+
+
+
+    </script>
+</body>
+</html>

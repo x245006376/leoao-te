@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>德国蓝卡-首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-2.2.0.js"></script>
+    <script>
+        window.onload=function(){
+            $('#left').click(function () {
+                $('#indexBanner ul ').append($('#indexBanner ul li:first'))
+            })
+            $('#right').click(function () {
+                $('#indexBanner ul ').prepend($('#indexBanner ul li:last'))
+            })
+
+        }
+    </script>
+</head>
+<body>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li class="active"><a href="index.html">首　页</a></li>
+            <li><a href="introduction.html">蓝卡介绍</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="products.html">产品展示</a></li>
+            <li><a href="technology.html">技术中心</a></li>
+            <li><a href="progam.html">工程案例</a></li>
+            <li><a href="service.html">服务中心</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="contact.html">联系蓝卡</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="inner">
+        <div class="bannerTop clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="logoTel">
+                <img src="images/tel.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">中文版</a></li>
+                <li>|</li>
+                <li><a href="#">English</a></li>
+                <li>|</li>
+                <li><a href="#">Россия</a></li>
+            </ul>
+        </div>
+        <div class="bannerImg" id="indexBanner">
+            <button id="left" class="left">&lt;</button>
+            <button id="right" class="right">&gt;</button>
+            <ul>
+                <li><a href="#"><img src="images/banner.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner6.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/banner7.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="inner">
+        <div class="contentLeft fl">
+            <div class="contentLeftItemOne clearfix">
+                <div class="contentLeftItemOneImg imgBg fl">
+                    <img src="images/contentImg_03.jpg" alt="">
+                </div>
+                <div class="contentLeftItemOneWord">
+                    <h2><span>Welcome!</span>　欢迎来到德国蓝卡（香港）集团有限公司</h2>
+                    <p>
+                        德国蓝卡（香港）集团有限公司是一家专业从事门窗、五金、异型材生产加工的企业，总投资2000万美元，具有国际领先水平的60条生产线，年生产断桥铝型材18000吨，产品适合不同的建筑风格，可以满足不同区域的用户要求。
+                    </p>
+
+                </div>
+            </div>
+            <div class="contentLeftItemTwo">
+                <div class="contentLeftTitle">
+                    <h2>精品推荐</h2>
+                    <a href="#">了解详情>></a>
+                </div>
+                <ul class="clearfix">
+                    <li class="noMarginL">
+                        <div class="pic1 imgBg"><img src="images/contentImg_07.jpg" alt=""></div>
+                        <p>幕墙立柱型材一览</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_09.jpg" alt=""></div>
+                        <p>XH95系列推拉窗</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_11.jpg" alt=""></div>
+                        <p>TB110系列提升推</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_13.jpg" alt=""></div>
+                        <p>JS100系列隐扇上</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentLeftItemTwo">
+                <div class="contentLeftTitle">
+                    <h2>产品展示</h2>
+                    <a href="#">了解详情>></a>
+                </div>
+                <ul class="clearfix">
+                    <li class="noMarginL">
+                        <div class="pic1 imgBg"><img src="images/contentImg_22.jpg" alt=""></div>
+                        <p>幕墙立柱型材一览</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_24.jpg" alt=""></div>
+                        <p>XH95系列推拉窗</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_26.jpg" alt=""></div>
+                        <p>TB110系列提升推</p>
+                    </li>
+                    <li>
+                        <div class="pic1 imgBg"><img src="images/contentImg_27.jpg" alt=""></div>
+                        <p>JS100系列隐扇上</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentRight">
+            <div class="contentRightItemOne">
+                <div class="contentLeftTitle asideTitle">
+                    <h2>新闻中心</h2>
+                    <a href="#">了解详情>></a>
+                </div>
+                <ul>
+                    <li>蓝卡铝业参展104届广交会 <span>09-09-07</span></li>
+                    <li>蓝卡铝业参展2009铝门窗幕墙行业 <span>09-09-07</span></li>
+                    <li>蓝卡铝业参展105届广交会 <span>09-09-07</span></li>
+                    <li>我公司参加2009年中国铝型材产业 <span>09-09-07</span></li>
+                    <li>蓝卡铝业参展第十一届建博会 <span>09-09-07</span></li>
+                </ul>
+                <a href="#"><img src="images/banggao.png" alt=""></a>
+            </div>
+            <div class="contentRightItemOne">
+                <div class="contentLeftTitle asideTitle">
+                    <h2>新闻中心</h2>
+                    <a href="#">了解详情>></a>
+                </div>
+                <div class="contentRightItemOneImg imgBg">
+                    <img src="images/contentImg_16.jpg">
+                </div>
+                <p>香港汇丰银行</p>
+                <a href="#"><img src="images/banggao2.png" alt=""></a>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="inner">
+        <div class="footerImg">
+            <img src="images/footerImg_03.jpg">
+        </div>
+        <div class="footerP">
+            <p>2010年 德国蓝卡（香港）集团有限公司 版权所有</p>
+            <p>全国免费热线：400-678-3786  电话：00852-21580629   传真：00852-35719160</p>
+            <p>地址：香港上环苏杭接49-51号建安商业大厦7楼</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

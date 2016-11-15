@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品展示</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/style.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script>
+        window.onload=function(){
+            tab('productUl');
+            $('#left').click(function () {
+                $('#ProductBanner ul ').append($('#ProductBanner ul li:first'))
+            })
+            $('#right').click(function () {
+                $('#ProductBanner ul ').prepend($('#ProductBanner ul li:last'))
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li ><a href="index.html">首　页</a></li>
+            <li><a href="introduction.html">蓝卡介绍</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li class="active"><a href="products.html">产品展示</a></li>
+            <li><a href="technology.html">技术中心</a></li>
+            <li><a href="progam.html">工程案例</a></li>
+            <li><a href="service.html">服务中心</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="contact.html">联系蓝卡</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="inner">
+        <div class="bannerTop clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="logoTel">
+                <img src="images/tel.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">中文版</a></li>
+                <li>|</li>
+                <li><a href="#">English</a></li>
+                <li>|</li>
+                <li><a href="#">Россия</a></li>
+            </ul>
+        </div>
+        <div class="bannerImg" id="ProductBanner">
+            <button id="left" class="left">&lt;</button>
+            <button id="right" class="right">&gt;</button>
+            <ul>
+                <li><a href="#"><img src="images/newsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/techBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/introductionBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/productsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/serviceBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/programBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/contactBanner_03.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="childContent">
+    <div class="inner">
+        <div class="childContentLeft">
+            <div class="contentLeftTitle">
+                <h2>精品推荐</h2>
+                <ul class="titleLocation">
+                    <li class="active">您当前位置:</li>
+                    <li><a href="#">首页</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">产品展示</a></li>
+                </ul>
+            </div>
+            <div class="culture noBack">
+                <div class="showImg imgBg fl">
+                    <img src="images/productsItem_03.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+
+                <div class="smallImg">
+                    <a href="#" class="leftIon"><img src="images/productsTabsBg_03.jpg" alt=""></a>
+                    <ul class="clearfix">
+                        <li class="noMarginL">
+                            <div class="pic1 imgBg"><img src="images/productsItem_07.jpg" alt=""></div>
+                            <p>幕墙立柱型材一览</p>
+                        </li>
+                        <li>
+                            <div class="pic1 imgBg"><img src="images/productsItem_09.jpg" alt=""></div>
+                            <p>XH95系列推拉窗</p>
+                        </li>
+                        <li>
+                            <div class="pic1 imgBg"><img src="images/productsItem_11.jpg" alt=""></div>
+                            <p>TB110系列提升推</p>
+                        </li>
+                        <li>
+                            <div class="pic1 imgBg"><img src="images/productsItem_13.jpg" alt=""></div>
+                            <p>JS100系列隐扇上</p>
+                        </li>
+                        <li>
+                            <div class="pic1 imgBg"><img src="images/productsItem_15.jpg" alt=""></div>
+                            <p>JS100系列隐扇上</p>
+                        </li>
+                    </ul>
+                    <a href="#" class="rightIon"><img src="images/productsTabsBg_05.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="childContentRight">
+            <div class="contentLeftTitle asideTitle">
+                <h2>新 闻 动 态</h2>
+            </div>
+            <ul id="productUl">
+                <li class="active">产品展示</li>
+                <li>玻璃幕墙铝型材 </li>
+                <li>推拉窗铝型材</li>
+                <li>平开窗（门）铝型材</li>
+                <li>门类铝型材</li>
+                <li>隔热铝型材</li>
+                <li>装饰、工业铝型材</li>
+                <li>阳台扶手铝型材</li>
+                <li>通用铝型材</li>
+            </ul>
+            <div class="jiaMen">
+                <img src="images/jiamengrexian.png" alt="">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="inner">
+        <div class="footerImg">
+            <img src="images/footerImg_03.jpg">
+        </div>
+        <div class="footerP">
+            <p>2010年 德国蓝卡（香港）集团有限公司 版权所有</p>
+            <p>全国免费热线：400-678-3786  电话：00852-21580629   传真：00852-35719160</p>
+            <p>地址：香港上环苏杭接49-51号建安商业大厦7楼</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reveal.css">
+    <link rel="stylesheet" href="../../css/landingWindow.css">
+    <link href="../../css/public.css" rel="stylesheet" type="text/css"/>
+
+    <!--<script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>-->
+    <script src="../../js/jquery-1.6.min.js" type="text/javascript"></script>
+    <script src="../../js/reveal.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../js/zzsc.js"></script>
+    <script type="text/javascript" src="../../js/pop.js"></script>
+    <script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+    <script>
+        $(function(){
+            //登录框
+
+            $(".big-link").click(function(){
+                $(".landwindow").removeClass("displaynone")
+            });
+            $("#closeWindow").click(function(){
+                $(".landwindow").addClass("displaynone")
+            });
+            $("label").click(function () {
+                $(this).toggleClass("checked", "")
+            });
+
+
+            $(".loginpage").click(function () {
+                $(".loginpage").addClass("tabstoggle");
+                $(".register").removeClass("tabstoggle");
+                $("#logintabs").show();
+                $("#registertabs").hide();
+            });
+            $(".register").click(function () {
+                $(".register").addClass("tabstoggle");
+                $(".loginpage").removeClass("tabstoggle");
+                $("#logintabs").hide();
+                $("#registertabs").show();
+            });
+            $('input, textarea').placeholder();
+        })
+    </script>
+</head>
+<body class="lxh">
+<div class="top">
+    <div class="inner overflowH clearFloat">
+        <div><a class="big-link" data-reveal-id="myModal" data-animation="fade">请登录</a>
+            <a href="../registerpage/registerpage.html">免费注册</a></div>
+        <ul class="overflowH">
+            <li><a href="javascript:;">我的合电台</a></li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li><a href="javascript:;">我的收藏</a></li>
+            <li><a href="javascript:;">客服中心</a></li>
+            <li><a href="javascript:;">在线咨询</a></li>
+        </ul>
+    </div>
+</div>
+<div class="inner">
+    <div class="course">
+        <div class="logo fl">
+            <a href="../../index.html"><img src="../../images/buyCarLog.png" alt="这是logo"></a>
+        </div>
+        <h2 class="fl">购物车</h2>
+        <div class="line fr"></div>
+        <ul class="courseRight fr">
+            <li>
+                <span class="finish">1</span>
+                <p>我的购物车</p>
+            </li>
+            <li>
+                <span>2</span>
+                <p>填写/核对订单信息</p>
+            </li>
+            <li>
+                <span>3</span>
+                <p>订单提交成功</p>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <h3>全部商品</h3>
+    </div>
+    <div class="buyCarNull">
+        <p>购物车还是空空的呢，快去&nbsp;<a href="../../index.html">首页</a>&nbsp;逛逛吧~~</p>
+    </div>
+    <div class="clear"></div>
+    <!--图片轮播区域-->
+    <div class="guess">
+        <ul class="title">
+            <li class="choose">猜你喜欢</li>
+            <li>我的收藏</li>
+        </ul>
+        <div class="clear"></div>
+        <div class="box">
+            <div class="picbox">
+                <ul class="piclist mainlist">
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                    <li><a href="#" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                        <p>HP惠普15-bdoo1tx/x5p5-</br>
+                            8pA/i3超极本</p>
+                        <span>¥1999.00</span>
+                        <a href=":;javascript" class="in">加入购物车</a></a></li>
+                </ul>
+                <ul class="piclist swaplist"></ul>
+            </div>
+            <div class="og_prev"></div>
+            <div class="og_next"></div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <div class="inner overflowH">
+        <ul class="clearFloat">
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="overflowH">
+            <a href="javascript:;">合电站简介</a>
+            <a href="javascript:;">合作伙伴</a>
+            <a href="javascript:;">法律声明</a>
+            <a href="javascript:;">联系方式</a>
+        </div>
+        <p>Copyright &copy; 2000-2015 一新科技 京ICP备09004081号-2 京公网安备110108400105号</p>
+    </div>
+</div>
+<!--登录框-->
+<div id="myModal" class="reveal-modal">
+    <div class="landwindow displaynone">
+        <div class="windowtop ">
+            <p class="fl">欢迎您登录合电站会员</p>
+            <p id="closeWindow" class="fr close-reveal-modal">X</p>
+        </div>
+        <div class="windowmain">
+            <ul>
+                <li class="loginpage fl tabstoggle">登录</li>
+                <li class="register fl ">注册</li>
+            </ul>
+
+            <div id="logintabs">
+                <input class="inputclass " id="username" type="text" placeholder="用户名/手机号/邮箱">
+                <input class="inputclass" id="password" type="password" placeholder="密码">
+                <div class="checkbox">
+                    <input id="automaticLogon" type="checkbox">
+                    <label for="automaticLogon"></label>
+                </div>
+                <p class="lostpassword">下次自动登录<span>|</span><a href="#">忘记密码?</a></p>
+                <input id="loginbtn" type="button" value="立即登录">
+            </div>
+
+            <div id="registertabs">
+                <input class="inputclass" id="company" type="text" placeholder="公司名称">
+                <input class="inputclass" id="phone" type="text" placeholder="手机号">
+                <input class="inputclass fl" id="verification" type="text" placeholder="验证码">
+                <div class="verificationMessage fl">获取短信验证码</div>
+                <input class="inputclass" id="setPassword" type="password" placeholder="设置密码">
+                <input class="inputclass" id="verifyPassword" type="password" placeholder="确认密码">
+                <div class="checkbox checkboxmargintop38px">
+                    <input id="ClearanceAgreement" type="checkbox">
+                    <label for="ClearanceAgreement"></label>
+                </div>
+                <p class="registerword">我已阅读并接受<a href="#">《合电站用户协议》</a></p>
+                <input id="registerbtn" type="button" value="同意协议并注册">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<ion-view id="classify">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-back-button>
+            <i class="button button-clear icon ion-ios-arrow-back"></i>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-title class="row row-title">
+        <a href="#/search-classify" id="row-title-al" class="icon ion-ios-search col col-10"></a>
+        <p id="row-title-p row-title-p-love" class="col col-80">分类</p>
+    </ion-nav-title>
+    <ion-content>
+        <!--轮播-->
+        <!--auto-play="true" 是否自动播放
+         slide-interval="2000" 切换时间的调整 默认为4000
+          show-pager="true" 是否显示分页器
+          active-slide="activeIndex" 当幻灯片切换时，这个变量会同步反应到当前幻灯片页索引号
+           pager-click="pagerClick(index)" 分页器点击事件
+           on-slide-changed="onSlideChanged(index)" 幻灯片切换事件
+-->
+        <ion-slide-box     auto-play="true"
+                           slide-interval="3000"
+                           show-pager="false"
+                           does-continue="true"
+        >
+            <ion-slide>
+                <img src="images/classify1.gif" style="width: 100%;">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/classify2.jpg" style="width: 100%;">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/classify3.jpg" style="width: 100%;">
+            </ion-slide>
+            <ion-slide>
+                <img src="images/classify5_02.jpg" style="width: 100%;">
+            </ion-slide>
+        </ion-slide-box>
+        <img src="images/fenlei_02.jpg" style="width: 100%;">
+        <div id="fenlei">
+            <ul class="row"  >
+                <li class="col">
+                    <a href="#/shangyi"><img src="images/fenlei1.jpg"/></a>
+                </li>
+                <li class="col">
+                    <a href="#/kuzi"><img src="images/fenlei2.jpg" /></a>
+                </li>
+                <li class="col">
+                    <a href="#/qunzi"><img  src="images/fenlei3.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="row"  >
+                <li class="col">
+                    <a href="#/xiezi"><img src="images/fenlei4.jpg"/></a>
+                </li>
+                <li class="col">
+                    <a href="#/peishi"> <img src="images/fenlei5.jpg"/></a>
+                </li>
+                <li class="col">
+                    <a href="#/bao"><img src="images/fenlei6.jpg"/></a>
+                </li>
+            </ul>
+            <ul class="row"  >
+                <li class="col">
+                    <a href="#/man"><img src="images/fenlei7.jpg"/></a>
+                </li>
+                <li class="col">
+                    <a href="#/family"> <img src="images/fenlei8.jpg"/></a>
+                </li>
+                <li class="col">
+                    <a href="#/tongzhuang"><img src="images/fenlei9.jpg"/></a>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>

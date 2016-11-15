@@ -1,0 +1,19 @@
+<ion-view view-title="{{currentArticle.title}}">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+            <i class="icon ion-arrow-left-c"></i>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+<ion-content>
+    <ion-item class="item-image">
+        <img ng-src="{{currentArticle.thumb}}" alt=""/>
+    </ion-item>
+    <ion-item class="item-text-wrap">
+
+    </ion-item>
+<ion-item ng-if="currentArticle.music" class="item media-middle">
+        <audio ng-src="{{currentArticle.music}}" controls="controller" autoplay>
+        </audio>
+</ion-item>
+</ion-content>
+</ion-view>

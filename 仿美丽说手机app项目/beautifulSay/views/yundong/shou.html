@@ -1,0 +1,23 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/home" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                瘦身直播厅
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="sport">
+        <p class="p">快来学学如何甩掉身上的肉肉把，这里为你提供一等一的减肥方法。
+        </p>
+        <ul class="row" ng-repeat="item in images">
+            <li class="col">
+                <img ng-src="{{item.img}}" style="width: 100%;">
+            </li>
+            <li class="col">
+                <img ng-src="{{item.img1}}" style="width: 100%;">
+            </li>
+        </ul>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务中心</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/style.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script>
+        window.onload=function(){
+            tab('serUl');
+            $('#left').click(function () {
+                $('#serviceBanner ul ').append($('#serviceBanner ul li:first'))
+            })
+            $('#right').click(function () {
+                $('#serviceBanner ul ').prepend($('#serviceBanner ul li:last'))
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li ><a href="index.html">首　页</a></li>
+            <li><a href="introduction.html">蓝卡介绍</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="products.html">产品展示</a></li>
+            <li><a href="technology.html">技术中心</a></li>
+            <li><a href="progam.html">工程案例</a></li>
+            <li class="active"><a href="service.html">服务中心</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="contact.html">联系蓝卡</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="inner">
+        <div class="bannerTop clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="logoTel">
+                <img src="images/tel.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">中文版</a></li>
+                <li>|</li>
+                <li><a href="#">English</a></li>
+                <li>|</li>
+                <li><a href="#">Россия</a></li>
+            </ul>
+        </div>
+        <div class="bannerImg" id="serviceBanner">
+            <button id="left" class="left">&lt;</button>
+            <button id="right" class="right">&gt;</button>
+            <ul>
+                <li><a href="#"><img src="images/introductionBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/techBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/productsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/newsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/serviceBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/programBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/contactBanner_03.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="childContent">
+    <div class="inner">
+        <div class="childContentLeft">
+            <div class="contentLeftTitle">
+                <h2>销售服务</h2>
+                <ul class="titleLocation">
+                    <li class="active">您当前位置:</li>
+                    <li><a href="#">首页</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">服务中心</a></li>
+                </ul>
+            </div>
+            <div class="culture noBack">
+                <p class="pMB">我公司自投产以来，就已建立了严格且完善的产品质量保证体系，和全面实行电脑科学化管理．各工序有专职质检人员、工艺监督人员对每件产品都进行全方位、全过程监控管理。实行全员参与质量监控、以确保每件产品出厂后无质量问题。我公司产品售后服务工作由型材销售人员直接负责，并由技术部门提供技术支持。</p>
+                <h3>服务承诺：</h3>
+                <p>1、按时按量按质交货，产品质量严格按照国家标准GB5237-2004各项技术指标要求执行生产，对每批出厂产品根据检测数据出具质量保证书。</p>
+                <p>2、在使用过程中如出现一些技术问题，我公司在接到通知后，将在第一时间给予回复．若需我公司专业工作人员到现场协作的，我公司都将积极配合，予以周到、细致的解决。</p>
+                <p class="pMB">3、若出现质量异议客户有投诉现象，我公司将本着客户至上的原则，及时沟通、妥善处理。</p>
+                <h3>服务措施：</h3>
+                <p>每位销售人员对所售出产品都有进行售后服务的义务，我公司为此专门制定了产品售后各部门的职责和质量补救措施。</p>
+                <p>1、销售部门负责及时将客户的投诉意见反馈回公司，公司制定解决方案和服务措施转到生产部门，实施售后服务工作．质检部门负责质量检查和监督工作，而生产部门、技术部门根据解决方案，及进配合处理。</p>
+                <p>2、及时收集客户反馈的产品信息，根据客户意见，查明情况分析原因，提出解决方案，在保证满足客户要求下，以最快的速度解决问题。</p>
+                <p>3、如因产品质量问题而造成的损坏，我公司负责免费更换．若因其它原因造成的产品质量问题，由双方协商解决。</p>
+            </div>
+        </div>
+        <div class="childContentRight">
+            <div class="contentLeftTitle asideTitle">
+                <h2>服 务 中 心</h2>
+            </div>
+            <ul id="serUl">
+                <li class="active">销售服务</li>
+                <li>营销网络</li>
+                <li>意见反馈</li>
+            </ul>
+            <div class="jiaMen">
+                <img src="images/jiamengrexian.png" alt="">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="inner">
+        <div class="footerImg">
+            <img src="images/footerImg_03.jpg">
+        </div>
+        <div class="footerP">
+            <p>2010年 德国蓝卡（香港）集团有限公司 版权所有</p>
+            <p>全国免费热线：400-678-3786  电话：00852-21580629   传真：00852-35719160</p>
+            <p>地址：香港上环苏杭接49-51号建安商业大厦7楼</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

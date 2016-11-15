@@ -1,0 +1,23 @@
+<ion-view id="fenlei1">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/classify" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                配饰
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="sport">
+        </p>
+        <ul class="row" ng-repeat="item in peishis">
+            <li class="col">
+                <img ng-src="{{item.pic1}}" style="width: 100%;">
+                <p>￥ {{item.price1}}.00</p>
+            </li>
+            <li class="col">
+                <img ng-src="{{item.pic2}}" style="width: 100%;">
+                <p>￥ {{item.price2}}.00</p>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

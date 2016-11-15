@@ -1,0 +1,19 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/home" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                美丽专家号
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="meili">
+        <ul class="list card">
+            <li class="item item-avatar-left meili-li" ng-repeat="item in persons">
+                <img ng-src="{{item.img}}">
+                <h2 class="title">{{item.name}}</h2>
+                <p>{{item.miaoshu}}<span class="">+关注</span></p>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

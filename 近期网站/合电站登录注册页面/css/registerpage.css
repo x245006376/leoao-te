@@ -1,0 +1,44 @@
+body{background-color: #f5f5f5}
+.inner{ width: 1000px; margin: 0 auto;}
+.header{height: 111px;}
+.footer{background: #eee;padding-top: 41px;}
+
+
+/*头部*/
+.header .inner a img{margin: 60px 0 20px 0;}
+.header .inner h2{margin: 82px 0 0 24px;font-size: 24px;font-weight: normal;}
+
+
+/*登陆部分*/
+.innerBox{width: 860px;height: 625px; background: #fff;border: 1px solid #bfbfbf;margin: 20px 0 39px 0;padding: 55px 69px 0;}
+.innerBox p{font-size: 20px;}
+.innerBox p a{color: #f84748;}
+.form{border-top: 1px solid #e5e5e5;margin-top: 39px;padding-top: 20px;}
+.inputclass{width: 383px;height: 48px;border:1px solid #bfbfbf;margin-right: 175px;font-size: 18px; padding-left: 15px;margin-top: 20px;}
+.form p{width: 285px; text-align: right;margin-top: 37px;}
+
+.checkbox{width: 16px;height: 16px;overflow: hidden; float: left;margin-left: 276px;margin-top: 61px;}
+label{background: url("../images/re_checkboxflase.jpg") no-repeat;display: block;width: 16px;height: 16px;}
+#ClearanceAgreement{margin-top: -13px;float:left;}
+.checked{background: url("../images/re_checkboxtrue.jpg") no-repeat;padding-left: 16px;}
+#verification{width: 183px;margin-right:0}
+.verificationMessage{width:151px;height: 48px;border: 1px solid #bfbfbf;margin:20px 0 0 20px;padding-left:27px;font-size:18px;line-height: 48px;color: #a4a4a4;}
+.form .registerword{font-size:18px;margin-left: 300px;margin-top: 60px; width: 296px;}
+.form .registerword a{color:#1a7fcd;}
+#registerbtn{width: 400px;height: 60px;background: #f84748;color: #fff;font-size: 24px;margin:19px 0 0 230px;}
+
+
+/*底部*/
+.subnav{width: 800px;height: 135px;display: block;margin: 41px 0 24px 94px;border-bottom: 1px solid #333;}
+.margin_left1{margin-left: 153px;}
+.margin_left2{margin-left: 135px;}
+.subnav li ul li{margin-bottom: 11px;font-size: 14px;}
+.subnav li ul li a{color: #000;}
+.subnav li ul li span{ font-size: 18px;margin-bottom: 13px;}
+
+.thirdnav{margin: 0 auto;display:block;width: 450px;}
+.thirdnav li{font-size: 18px;}
+.thirdnav li a{color: #000;}
+.thirdnav li span{ margin: 0 20px;}
+
+.copyright{font-size: 18px;text-align: center;margin-top: 14px;margin-bottom: 26px;}

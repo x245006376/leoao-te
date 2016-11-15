@@ -1,0 +1,105 @@
+<ion-view>
+    <ion-nav-bar class="bar-light">
+    </ion-nav-bar>
+    <ion-nav-title class="row row-title">
+            <a href="#/search" id="row-title-al" class="icon ion-ios-search col col-10"></a>
+            <p id="row-title-p" class="col col-80">MILISHUO</p>
+            <a id="row-title-ar" class="icon ion-ios-camera col col-10"></a>
+    </ion-nav-title>
+    <ion-content>
+        <!--下拉刷新-->
+        <ion-refresher pulling-icon="icon .ion-loading-d"
+                       on-refresh="doRefresh()">
+        </ion-refresher>
+        <!--轮播-->
+        <!--auto-play="true" 是否自动播放
+         slide-interval="2000" 切换时间的调整 默认为4000
+          show-pager="true" 是否显示分页器
+          active-slide="activeIndex" 当幻灯片切换时，这个变量会同步反应到当前幻灯片页索引号
+           pager-click="pagerClick(index)" 分页器点击事件
+           on-slide-changed="onSlideChanged(index)" 幻灯片切换事件
+-->
+        <ion-slide-box     auto-play="true"
+                           slide-interval="3000"
+                           show-pager="true"
+                           does-continue="true"
+        >
+            <ion-slide  ng-repeat="img in imgs">
+                <img ng-src="{{img.image}}" style="width: 100%;">
+            </ion-slide>
+        </ion-slide-box>
+        <ul class="more row">
+            <li class="col col-30">
+                <a href="#/yundong" ><img src="images/dapei_01.jpg" style="width: 100%;"></a>
+            </li>
+            <li class="col col-30">
+                <a href="#/shou" ><img src="images/dapei_02.jpg" style="width: 100%;"></a>
+            </li>
+            <li class="col col-30">
+                <a href="#/ct" ><img src="images/dapei_04.gif" style="width: 100%;"></a>
+            </li>
+            <li class="col col-30">
+                <a href="#/sn" ><img src="images/dapei_05.gif" style="width: 100%;"></a>
+            </li>
+        </ul>
+        <div class="hengtiao"></div>
+        <div id="meili">
+            <div class="list gd">
+                <span class="spanl">美丽专家号</span>
+                <span class="spanr" ui-sref="meili">查看更多 <span class="icon ion-ios-arrow-right"></span> </span>
+            </div>
+            <ul class="list row">
+                <li class="col">
+                    <a href="#/meili">
+                        <img src="images/meili_01.gif" style="width: 100%;" alt="">
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#/meili">
+                        <img src="images/meili_02.gif" style="width: 100%;" alt="">
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#/meili">
+                        <img src="images/meili_03.gif" style="width: 100%;" alt="">
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#/meili">
+                        <img src="images/meili_04.gif" style="width: 100%;" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="list card" ng-repeat="item in datas" id="listCard">
+            <div class="item item-avatar">
+                <img ng-src="{{item.tuxiang}}">
+                <h3>{{item.name}}</h3>
+                <p>{{item.p}}</p>
+            </div>
+            <div class="item item-body">
+                <img ng-src="{{item.pic}}" style="width: 100%;" />
+                <p>{{item.ms}}</p>
+                <p>
+                    <a class="subdued"> 喜欢 {{item.lick}}</a>
+                    <a class="subdued"> 评论 {{item.comment}}</a>
+                </p>
+
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" >
+                    <i class="icon ion-heart"></i> 喜欢
+                </a>
+                <a class="tab-item">
+                    <i class="icon ion-chatbox"></i> 评论
+                </a>
+                <a class="tab-item">
+                    <i class="icon ion-share"></i> 分享
+                </a>
+            </div>
+        </div>
+        <!--无限滚动-->
+        <ion-infinite-scroll on-infinite="loadMore()" distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

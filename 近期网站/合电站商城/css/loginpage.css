@@ -1,0 +1,40 @@
+.inner{ width: 1000px; margin: 0 auto;}
+
+.header{height: 111px;}
+
+.section{ height: 470px; background-color: #fbda68;}
+
+/*头部*/
+.header .inner a img{margin-top: 60px;}
+.header .inner h2{margin: 82px 0 0 24px;font-size: 24px;font-weight: normal;}
+
+/*登陆部分*/
+.re_banner{width: 570px; height: 366px; background-color: #fdeaa9;margin-top: 54px;}
+.re_login{width: 325px; height: 340px; background-color: #fff;margin:50px 0 0 28px;padding:30px 0 0 25px;}
+.re_login h3{width: 205px;font-size: 18px;float: left;}
+.register a{float: right;color: #1a7fcd; margin-right:22px;}
+#username{width: 288px; height: 38px; border: 1px solid #e5e5e5;padding-left: 10px;font-size: 14px;line-height: 38px;margin-top: 30px;}
+#password{width: 288px; height: 38px; border: 1px solid #e5e5e5;padding-left: 10px;font-size: 14px;line-height: 38px;margin-top: 20px;margin-right: 25px;}
+#automaticLogon{margin-top: -13px;float:left;}
+.checkbox{width: 16px;height: 16px;overflow: hidden;margin-top: 20px; float: left;}
+label{background: url("../images/re_checkboxflase.jpg") no-repeat;display: block;width: 16px;height: 16px;}
+.checked{background: url("../images/re_checkboxtrue.jpg") no-repeat;padding-left: 16px;}
+.lostpassword{margin:20px 0 0 27px;font-size: 14px;}
+.lostpassword span{margin: 0 20px;color: #bfbfbf;}
+.lostpassword a{color: #000}
+#login{width: 300px;height: 40px;background: #f84748;color: #fff;margin-top: 52px;font-size: 18px;margin-left: -16px;}
+
+/*底部*/
+.subnav{width: 800px;height: 135px;display: block;margin: 156px 0 24px 94px;border-bottom: 1px solid #333;}
+.margin_left1{margin-left: 153px;}
+.margin_left2{margin-left: 135px;}
+.subnav li ul li{margin-bottom: 11px;font-size: 14px;}
+.subnav li ul li a{color: #000;}
+.subnav li ul li span{ font-size: 18px;margin-bottom: 13px;}
+
+.thirdnav{margin: 0 auto;display:block;width: 450px;}
+.thirdnav li{font-size: 18px;}
+.thirdnav li a{color: #000;}
+.thirdnav li span{ margin: 0 20px;}
+
+.copyright{font-size: 18px;text-align: center;margin-top: 14px;margin-bottom: 565px;}

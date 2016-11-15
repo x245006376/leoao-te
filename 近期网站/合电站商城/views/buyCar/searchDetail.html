@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/search.css">
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/landingWindow.css">
+    <link href="../../css/reveal.css" rel="stylesheet" type="text/css"/>
+    <!--<script src="../../js/jquery-1.12.4.min.js"></script>-->
+    <script src="../../js/jquery-1.6.min.js"></script>
+    <script src="../../js/public1.js"></script>
+
+    <script src="../../js/reveal.js"></script>
+    <script type="text/javascript" src="../../js/zzsc.js"></script>
+    <script type="text/javascript" src="../../js/jquery.placeholder.min.js"></script>
+
+    <script src="../../js/search.js"></script>
+    <script>
+        window.onload=function(){
+            //登录框
+
+            $(".big-link").click(function(){
+                $(".landwindow").removeClass("displaynone")
+            });
+            $("#closeWindow").click(function(){
+                $(".landwindow").addClass("displaynone")
+            });
+            $("label").click(function () {
+                $(this).toggleClass("checked", "")
+            });
+
+
+            $(".loginpage").click(function () {
+                $(".loginpage").addClass("tabstoggle");
+                $(".register").removeClass("tabstoggle");
+                $("#logintabs").show();
+                $("#registertabs").hide();
+            });
+            $(".register").click(function () {
+                $(".register").addClass("tabstoggle");
+                $(".loginpage").removeClass("tabstoggle");
+                $("#logintabs").hide();
+                $("#registertabs").show();
+            });
+            $('input, textarea').placeholder();
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="inner overflowH clearFloat">
+        <div><a class="big-link" data-reveal-id="myModal" data-animation="fade">请登录</a><a href="../../views/registerpage/registerpage.html">免费注册</a></div>
+        <ul class="overflowH">
+            <li><a href="../../index.html">我的合电台</a></li>
+            <li><a href="../../views/order/collect.html">我的订单</a></li>
+            <li><a href="../../views/order/collect.html">我的收藏</a></li>
+            <li><a href="javascript:;">客服中心</a></li>
+            <li><a href="javascript:;">在线咨询</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="inner clearFloat">
+        <h1><a href="../../index.html"><img src="../../images/header_logo.jpg" alt=""></a></h1>
+        <a href="../../views/buycar/buyCar.html" class="shop">购物车<span>&gt;</span><i>3</i></a>
+        <div class="search"><input type="text" placeholder="请输入产品关键字或型号"><a href="javascript:;">搜索</a></div>
+        <a href="javascript:;" class="category">商品分类</a>
+        <div class="popCategory">
+            <ul>
+                <li><a href="javascript:;">电脑整机<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">办公设备<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">电脑配件<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">数码影音<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">移动智能<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">网络设备<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">信息安全<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">服务器<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">存储<img src="../../images/home_sanjiao.png"/></a></li>
+                <li><a href="javascript:;">软件<img src="../../images/home_sanjiao.png"/></a></li>
+            </ul>
+            <div class="categoryInfo">
+                <dl>
+                    <dt><a href="###">笔记本</a></dt>
+                    <dd><a href="###" class="fontRedColor">超极本</a><a href="###">游戏本</a><a href="###">商用本</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">平板电脑</a></dt>
+                    <dd><a href="###">iPad</a><a href="###">surface</a><a href="###">kindle</a><a href="###">3G/4G上网</a><a href="###">Android平板电脑</a><a href="###">Windows平板电脑</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">台式机</a></dt>
+                    <dd><a href="###">商用电脑</a><a href="###">家用电脑</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="###">一体机</a></dt>
+                    <dd><a href="###">家用一体机</a><a href="###">商用一体机</a><a href="###">触控一体机</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="searchWrap">
+    <div class="inner">
+
+        <div class="searchDz clear">
+            <p>全部结果</p>
+            <i>&gt;</i>
+            <span>vivo X7 全网通 4GB+64GB 移动联通电信4G手机 双卡双</span>
+        </div>
+        <!--搜索内容-->
+        <div class="searchContent">
+            <div class="searchContentTitle">
+                <h3>推广产品</h3>
+                <ul>
+                    <li class="ac"><a href="javascript:;">综合排序</a></li>
+                    <li><a href="javascript:;">人气</a></li>
+                    <li><a href="javascript:;">销量</a></li>
+                    <li><a href="javascript:;">上架时间</a></li>
+                    <li><a href="javascript:;">价格</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="searchLeft">
+                <div class="sidebar">
+                    <div class="sidebarPicBig">
+                        <img src="../../images/liuTebietuijian.jpg"/>
+                    </div>
+                    <div class="sidebarPic">
+                        <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                        <a href="details.html"><span>¥2800.00</span></a>
+                        <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                            8pA/i3超极本</p></a>
+                        <div class="sidebarWire"></div>
+                    </div>
+
+                    <div class="sidebarPic">
+                        <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                        <a href="details.html"><span>¥2800.00</span></a>
+                        <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                            8pA/i3超极本</p></a>
+                        <div class="sidebarWire"></div>
+                    </div>
+
+                    <div class="sidebarPic">
+                        <a href="details.html"><img src="../../images/liuTuiguangImg3.jpg"/></a>
+                        <a href="details.html"><span>¥2800.00</span></a>
+                        <a href="details.html"><p>HP惠普15-bdoo1tx/x5p5-
+                            8pA/i3超极本</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="searchRight">
+                <div class="searchPart">
+                    <div class="searchPart1">
+                        <div class="itemImg"><a href="javascript:;"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="javascript:;">¥2800.00</a></div>
+                        <div class="itemName"><a href="javascript:;">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </div>
+                </div>
+                <div class="tuiJianTitle">
+                    <h3>热销推荐商品</h3>
+                </div>
+                <ul>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                    <li>
+                        <div class="itemImg"><a href="details.html"><img src="../../images/liuItemPic.jpg" alt=""></a></div>
+                        <div class="itemPrice"><a href="details.html">¥2800.00</a></div>
+                        <div class="itemName"><a href="details.html">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guess">
+            <ul class="title">
+                <li class="choose">猜你喜欢</li>
+                <li>我的收藏</li>
+            </ul>
+            <div class="clear"></div>
+            <div class="box">
+                <div class="picbox">
+                    <ul class="piclist mainlist">
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                        <li><a href="details.html" target="_blank"><img src="../../images/liu_buyCar_04_03.png"/>
+                            <p>HP惠普15-bdoo1tx/x5p5-</br>
+                                8pA/i3超极本</p>
+                            <span>¥1999.00</span>
+                            <a href="javascript:;" class="in">加入购物车</a></a></li>
+                    </ul>
+                    <ul class="piclist swaplist"></ul>
+                </div>
+                <div class="og_prev"></div>
+                <div class="og_next"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="bottom">
+    <div class="inner overflowH">
+        <ul class="clearFloat">
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="overflowH">
+            <a href="javascript:;">合电站简介</a>
+            <a href="javascript:;">合作伙伴</a>
+            <a href="javascript:;">法律声明</a>
+            <a href="javascript:;">联系方式</a>
+        </div>
+        <p>Copyright &copy; 2000-2015 一新科技 京ICP备09004081号-2 京公网安备110108400105号</p>
+    </div>
+</div>
+<!--登录框-->
+<div id="myModal" class="reveal-modal">
+    <div class="landwindow displaynone">
+        <div class="windowtop ">
+            <p class="fl">欢迎您登录合电站会员</p>
+            <p id="closeWindow" class="fr close-reveal-modal">X</p>
+        </div>
+        <div class="windowmain">
+            <ul>
+                <li class="loginpage fl tabstoggle">登录</li>
+                <li class="register fl ">注册</li>
+            </ul>
+
+            <div id="logintabs">
+                <input class="inputclass " id="username" type="text" placeholder="用户名/手机号/邮箱">
+                <input class="inputclass" id="password" type="password" placeholder="密码">
+                <div class="checkbox">
+                    <input id="automaticLogon" type="checkbox">
+                    <label for="automaticLogon"></label>
+                </div>
+                <p class="lostpassword">下次自动登录<span>|</span><a href="#">忘记密码?</a></p>
+                <input id="loginbtn" type="button" value="立即登录">
+            </div>
+
+            <div id="registertabs">
+                <input class="inputclass" id="company" type="text" placeholder="公司名称">
+                <input class="inputclass" id="phone" type="text" placeholder="手机号">
+                <input class="inputclass fl" id="verification" type="text" placeholder="验证码">
+                <div class="verificationMessage fl">获取短信验证码</div>
+                <input class="inputclass" id="setPassword" type="password" placeholder="设置密码">
+                <input class="inputclass" id="verifyPassword" type="password" placeholder="确认密码">
+                <div class="checkbox checkboxmargintop38px">
+                    <input id="ClearanceAgreement" type="checkbox">
+                    <label for="ClearanceAgreement"></label>
+                </div>
+                <p class="registerword">我已阅读并接受<a href="#">《合电站用户协议》</a></p>
+                <input id="registerbtn" type="button" value="同意协议并注册">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

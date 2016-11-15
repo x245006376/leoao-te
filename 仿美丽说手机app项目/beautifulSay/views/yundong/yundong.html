@@ -1,0 +1,28 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+                <p id="fanhui">
+                    <a href="#/tabs/home" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                    运动风
+                </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="sport">
+        <p class="p">运动风越来越受到大家的追捧，
+            不仅因为它给人充满活力的形象
+            ，更因为它穿起来很舒适。
+            在这个运动风当道的今天，一定不能落下哦！
+        </p>
+        <ul class="row" ng-repeat="item in images">
+            <li class="col">
+                <img ng-src="{{item.img}}" style="width: 100%;">
+                <p>￥ {{item.price}}</p>
+            </li>
+            <li class="col">
+                <img ng-src="{{item.img1}}" style="width: 100%;">
+                <p>￥ {{item.price1}}</p>
+            </li>
+        </ul>
+
+    </ion-content>
+</ion-view>

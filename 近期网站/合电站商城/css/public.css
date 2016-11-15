@@ -1,0 +1,276 @@
+/*-----------------------------公共样式 王圆圆 开始----------------------------------------*/
+body{
+    font-size:12px;
+    color:#333;
+    font-family: 黑体 Regular;
+}
+.inner{
+    width:1000px;
+    margin:0 auto;
+}
+.overflowH{
+    overflow: hidden;
+}
+.top{
+    height:40px;
+    background:#f9f9f9;
+    border-bottom:1px solid #eee;
+}
+.clearFloat:after{
+    content:"";
+    display: block;
+    clear: both;
+    height:0;
+    font-size:0;
+    *zooom:1;
+}
+.top .inner>div{
+    float: left;
+    margin-left:-19px;
+}
+.top .inner a{
+    display: inline-block;
+    margin-top:15px;
+    margin-bottom:11px;
+    padding:0 18px;
+    border-left:1px solid #e0dfdf;
+    color:#000;
+    font-size:14px;
+}
+.top .inner>ul{
+    float: right;
+
+}
+.top .inner>ul li{
+    display: inline-block;
+    margin-left: -1px;
+}
+.header{
+    border-bottom:4px solid #f84748;
+
+    position: relative;
+}
+.header .inner{
+    position: relative;
+    padding-bottom:61px;
+}
+.header h1{
+    float: left;
+}
+.header h1 a{
+    display: block;
+}
+.header .shop{
+    float: right;
+    margin-top:29px;
+    margin-left:43px;
+    line-height:38px;
+    background:#f5f5f5 url("../images/header_shop.png") 4px 10px no-repeat;
+    color:#737373;
+    font-size:18px;
+    border:1px solid #dcdcdc;
+    padding-left:42px;
+    padding-right:8px;
+    font-weight: 600;
+    position: relative;
+
+}
+.header .shop span{
+    margin-left:16px;
+    display: inline-block;
+}
+
+.header .shop i{
+    position: absolute;
+    left:77px;
+    top:-14px;
+    background:url("../images/header_shop_icon.png") left top no-repeat;
+    width:36px;
+    height:23px;
+    color:#fff;
+    font-style: normal;
+    line-height:20px;
+    text-align: center;
+}
+.header .search{
+    float: right;
+    border:2px solid #f84748;
+    margin-top:29px;
+}
+.header .search input{
+    line-height:36px;
+    width:376px;
+    padding-left:35px;
+    border:0;
+    background:url("../images/header_search.png") 8px 9px no-repeat;
+    outline: none;
+    font-size:14px;
+    display: inline-block;
+    height: 39px;
+    line-height:39px;
+    vertical-align: top;
+}
+.header .search a{
+    color:#fff;
+    background:#f84748;
+    padding:0 35px;
+    line-height:39px;
+    display: inline-block;
+    font-size:20px;
+}
+.header .category{
+    position: absolute;
+    line-height:46px;
+    width:186px;
+    text-align: center;
+    color:#fff;
+    font-size:20px;
+    left:0;
+    bottom:0;
+    background:#f84748;
+}
+.header .category img{
+    display: inline-block;
+    margin-left: 20px;
+}
+.home .header .category img{
+    display: none;
+}
+.header .popCategory{
+    position: absolute;
+    left:0;
+    top:137px;
+    z-index: 1;
+    margin-top:1px;
+    display: none;
+}
+
+.header .popCategory > ul {
+    float: left;
+    width: 186px;
+    margin-right: 1px;
+}
+
+.header .popCategory > ul a {
+    display: block;
+    background: #fafafa;
+    line-height: 46px;
+    padding-left: 18px;
+    border-bottom: 1px solid #e4e4e5;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+}
+
+.header .popCategory > ul a img{
+    position: absolute;
+    right: 19px;
+    top: 13px;
+    line-height: 1;
+}
+
+.header .popCategory  .categoryInfo{
+    position: absolute;
+    left:186px;
+    top:0;
+    width:640px;
+    height:468px;
+    border:1px solid #ff0000;
+    background:#fff;
+    z-index:1;
+    display: none;
+}
+.header .popCategory  .categoryInfo dt,.header .popCategory  .categoryInfo dd{
+    display: inline-block;
+}
+.header .popCategory  .categoryInfo dt{
+    width:120px;
+    line-height:47px;
+    font-size:14px;
+}
+.header .popCategory  .categoryInfo dt a{
+    color:#000;
+    padding-left:32px;
+    display: block;
+    font-weight: 600;
+}
+.header .popCategory  .categoryInfo dd{
+    border-bottom:1px solid #e4e4e5;
+    width:514px;
+}
+.header .popCategory  .categoryInfo dd a{
+    display: inline-block;
+    color:#545454;
+    line-height:46px;
+    margin-right:18px;
+    font-size:14px;
+}
+.header .popCategory  .categoryInfo dd .fontRedColor{
+    color:#f84748;
+}
+.header .popCategory > ul .navActive{
+    background:#f84748;
+    color:#fff;
+}
+.bottom{
+    background:#eeeeee;
+    padding-bottom:13px;
+}
+.bottom .inner{
+    padding-left:94px;
+    padding-right:106px;
+    padding-top:34px;
+    width:800px;
+    text-align: center;
+}
+.bottom .inner ul{
+    width: 1000px;
+    padding-bottom: 32px;
+    text-align: left;
+    position: relative;
+}
+.bottom .inner ul:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 800px;
+    height: 1px;
+    background: #333;
+    left: 0;
+    top: 130px;
+}
+.bottom .inner ul li{
+    float: left;
+    width:227px;
+}
+.bottom .inner ul li dt{
+    line-height:32px;
+    font-size:18px;
+    color:#000;
+}
+.bottom .inner ul li dd a{
+    font-size:14px;
+    line-height: 26px;
+    color:#000;
+}
+.bottom .inner>div{
+    display: inline-block;
+    margin-top: 60px;
+    font-size: 0;
+    text-align: center;
+}
+.bottom .inner>div a{
+    display: inline-block;
+    line-height:22px;
+    color:#000;
+    font-size:18px;
+    padding:0 21px;
+    border-right:1px solid #686868;
+    border-left:1px solid #474747;
+    margin-left: -1px;
+}
+.bottom .inner p{
+    line-height:43px;
+    font-size:18px;
+}
+/*-----------------------------公共样式 王圆圆 结束----------------------------------------*/

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>技术中心</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/style.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script>
+        window.onload=function(){
+            tab('techUl');
+            $('#left').click(function () {
+                $('#techBanner ul ').append($('#techBanner ul li:first'))
+            })
+            $('#right').click(function () {
+                $('#techBanner ul ').prepend($('#techBanner ul li:last'))
+            })
+        }
+    </script>
+</head>
+<body>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li ><a href="index.html">首　页</a></li>
+            <li><a href="introduction.html">蓝卡介绍</a></li>
+            <li><a href="news.html">新闻动态</a></li>
+            <li><a href="products.html">产品展示</a></li>
+            <li class="active"><a href="technology.html">技术中心</a></li>
+            <li><a href="progam.html">工程案例</a></li>
+            <li><a href="service.html">服务中心</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="contact.html">联系蓝卡</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="inner">
+        <div class="bannerTop clearfix">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="logoTel">
+                <img src="images/tel.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">中文版</a></li>
+                <li>|</li>
+                <li><a href="#">English</a></li>
+                <li>|</li>
+                <li><a href="#">Россия</a></li>
+            </ul>
+        </div>
+        <div class="bannerImg" id="techBanner">
+            <button id="left" class="left">&lt;</button>
+            <button id="right" class="right">&gt;</button>
+            <ul>
+                <li><a href="#"><img src="images/techBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/introductionBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/productsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/newsBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/serviceBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/programBanner_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/contactBanner_03.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="childContent">
+    <div class="inner">
+        <div class="childContentLeft">
+            <div class="contentLeftTitle">
+                <h2>生产体系</h2>
+                <ul class="titleLocation">
+                    <li class="active">您当前位置:</li>
+                    <li><a href="#">首页</a></li>
+                    <li>&gt;</li>
+                    <li><a href="#">技术中心</a></li>
+                </ul>
+            </div>
+            <div class="culture noBack techPl">
+                <img src="images/techImg.png" alt="">
+            </div>
+        </div>
+        <div class="childContentRight">
+            <div class="contentLeftTitle asideTitle">
+                <h2>新 闻 动 态</h2>
+            </div>
+            <ul id="techUl">
+                <li class="active">生产体系</li>
+                <li>生产装备</li>
+                <li>产品检测</li>
+                <li>质量控制</li>
+                <li>科研攻关</li>
+                <li>断桥铝知识</li>
+            </ul>
+            <div class="jiaMen">
+                <img src="images/jiamengrexian.png" alt="">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="inner">
+        <div class="footerImg">
+            <img src="images/footerImg_03.jpg">
+        </div>
+        <div class="footerP">
+            <p>2010年 德国蓝卡（香港）集团有限公司 版权所有</p>
+            <p>全国免费热线：400-678-3786  电话：00852-21580629   传真：00852-35719160</p>
+            <p>地址：香港上环苏杭接49-51号建安商业大厦7楼</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

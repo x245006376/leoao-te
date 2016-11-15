@@ -1,0 +1,641 @@
+/*--重置--*/
+body, ul, li, dt, dd, ol, dl, h1, h2, h3, h4, h5, h6, a, b, i, img, input, strong, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none
+}
+
+body {
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #505050;
+}
+
+a {
+    text-decoration: none
+}
+
+input, textarea, img,button {
+    border: none;
+    outline: none;
+}
+
+/*--公用--*/
+
+.fl {
+    float: left;
+    _display: inline
+}
+
+.fr {
+    float: right;
+    _display: inline;
+}
+
+.inner {
+    width: 930px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    *zoom: 1
+}
+
+.clear {
+    clear: both;
+}
+
+.nav {
+    height: 41px;
+    background: url("../images/nav_bg_02.jpg") repeat-x;
+}
+
+.nav ul {
+    width: 100%;
+    background: url("../images/nav_bg_06.jpg") repeat-x;
+    border-right: 1px solid #212915;
+
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    font-size: 15px;
+    display: block;
+    width: 102px;
+    text-align: center;
+    line-height: 41px;
+    color: white;
+    border-left: 1px solid #212915;
+}
+
+.nav ul .active a {
+    color: #003300;
+    background: url("../images/nav_bg_04.jpg");
+}
+
+.banner {
+    padding-top: 21px;
+    padding-bottom: 27px;
+    background: url("../images/bannerbg_02.jpg") repeat-x;
+}
+
+.banner .bannerTop .logo {
+    margin-right: 17px;
+    float: left;
+}
+
+.banner .bannerTop .logo img {
+    display: block;
+}
+
+.banner .bannerTop .logoTel {
+    float: left;
+}
+
+.banner .bannerTop .logoTel img {
+    display: block;
+}
+
+.banner .bannerTop {
+    margin-bottom: 18px;
+}
+
+.banner .bannerTop ul {
+    margin-right: 11px;
+    border-radius: 3px;
+    padding: 0 7px;
+    height: 27px;
+    float: right;
+    background: #475d3a;
+}
+
+.banner .bannerTop ul li {
+    color: #b1c4a6;
+    float: left;
+    line-height: 27px;
+}
+
+.banner .bannerTop ul li a {
+    font-family: Arial;
+    display: block;
+    padding: 0 10px;
+    color: #b1c4a6;
+}
+
+.content {
+    background: #e0d9c6;
+}
+
+.content .inner {
+    padding-right: 8px;;
+    width: 922px;
+    padding-top: 20px;
+    background: #e9e4d7;
+}
+
+.contentLeftItemOneImg {
+    margin-left: 15px;
+}
+
+.imgBg {
+    padding: 4px;
+    background: #d0cfc0;
+}
+
+.contentLeftItemOneWord {
+    margin-left: 17px;
+
+    float: left;
+    width: 412px;
+}
+
+.contentLeftItemOneWord h2 {
+
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #336600;
+}
+
+.contentLeftItemOneWord h2 span {
+    font-size: 40px;
+    font-family: Chiller;
+}
+
+.contentLeftItemOneWord p {
+    color: #505050;
+    text-indent: 2em;
+    line-height: 20px;
+}
+
+.contentLeftItemOneWord a {
+    float: right;
+    color: #599300;
+    font-family: Consolas;
+}
+
+.contentLeftItemOne {
+    margin-bottom: 27px;
+}
+
+.contentLeftItemTwo {
+    margin-bottom: 12px;
+    padding-left: 12px;
+    width: 609px;
+}
+
+.contentLeftTitle {
+    color: #599301;
+    margin-bottom: 12px;
+    line-height: 34px;
+    height: 34px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 7px;
+    background: #ded8c7;
+    border-bottom: 1px solid #e7e2d6;
+}
+
+.asideTitle {
+    padding-left: 17px;
+    background: #f0ece3;
+}
+
+.contentLeftTitle h2 {
+    font-size: 15px;
+    float: left;
+    padding-left: 30px;
+    background: url("../images/titlebg1.png") no-repeat left center;
+}
+
+.contentLeftTitle a {
+    float: right;
+    color: #599300;
+    font-family: Consolas;
+}
+
+.contentLeftItemTwo ul li {
+    margin-left: 3px;
+    padding: 0 5px;
+    float: left;
+    text-align: center;
+}
+
+.contentLeftItemTwo ul li p {
+    line-height: 30px;
+    color: #505050;
+}
+
+.contentLeftItemTwo ul li img {
+    display: block;
+    width: 132px;
+}
+
+.contentLeftItemTwo .noMarginL {
+    margin-left: 0;
+}
+
+.contentRight {
+    width: 278px;
+    float: right;
+}
+
+.contentRightItemOne {
+    margin-bottom: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    border-bottom: none;
+    box-shadow: 0 -3px 8px #ccc;
+}
+
+.contentRight .contentRightItemOne .contentLeftTitle {
+    position: relative;
+}
+
+.contentRight .contentRightItemOne .contentLeftTitle:before {
+    content: '';
+    height: 3px;
+    width: 103px;
+    background: #599301;
+    position: absolute;
+    left: 8px;;
+    bottom: -3px;
+}
+
+.contentRight .contentRightItemOne .contentLeftTitle:after {
+    content: '';
+    height: 3px;
+    width: 157px;
+    background: #b5c997;
+    position: absolute;
+    right: 10px;
+    bottom: -3px;
+}
+
+.contentRight .contentRightItemOne ul {
+    padding: 4px 12px 0 12px;
+    margin-bottom: 34px;
+}
+
+.contentRight .contentRightItemOne ul li {
+    padding-left: 8px;
+    background: url("../images/liIcon_03.jpg") no-repeat left center;
+    margin-bottom: 11px;
+    color: #505050;
+}
+
+.contentRight .contentRightItemOne ul li span {
+    float: right;
+}
+
+.contentRightItemOneImg {
+    width: 240px;
+    margin-left: 18px;
+}
+
+.contentRightItemOne p {
+    color: #505050;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 17px;
+
+}
+
+.contentRight {
+    position: relative;
+    top: -31px;
+}
+
+.footer {
+    height: 93px;
+    background: url("../images/footerBg_03.jpg") repeat-x;
+}
+
+.footerP {
+    padding-top: 18px;
+    color: white;
+    float: right;
+}
+
+.footerP p {
+    text-align: right;
+    line-height: 18px;;
+}
+
+.footerImg {
+    float: left;
+}
+
+/*----子页面----*/
+.childContent {
+    background: #e0d9c6;
+}
+
+.childContent .inner {
+    padding-bottom: 62px;
+    background: #e8e3d7;
+    padding-top: 5px;
+    padding-left: 5px;;
+}
+
+.childContentLeft {
+    float: left;
+    width: 723px;
+}
+
+.titleLocation {
+    padding-right: 7px;
+    float: right;
+}
+
+.titleLocation li {
+    margin-left: 7px;
+    font-family: Consolas;
+    float: left;
+}
+
+.titleLocation .active {
+    color: #818877;
+}
+
+.culture {
+    background: url("../images/cultureBg_03.jpg") no-repeat 0 60px;
+    padding-left: 39px;
+}
+
+.culture dl dt {
+    height: 20px;
+    line-height: 20px;
+    font-family: '宋体';
+    font-weight: bold;
+    color: #599301;
+    font-size: 13px;
+}
+
+.culture dl dd {
+    background: url("../images/childLiIcon_03.jpg") no-repeat 3px;
+    padding-left: 12px;
+    height: 20px;
+    line-height: 20px;
+    color: #505050;
+}
+
+.culture dl {
+    margin-bottom: 20px;
+}
+
+.culture dl span {
+    color: #599301;
+    font-size: 13px;
+}
+
+.culture .active {
+    width: 324px;
+}
+
+.culture .active dd {
+    margin-right: 39px;
+    float: left;
+}
+
+.childContentRight {
+    position: relative;
+    top: -21px;
+    width: 195px;
+    float: left;
+}
+
+.childContentRight {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    border-bottom: none;
+    box-shadow: 0 -3px 8px #ccc;
+}
+
+.childContentRight .contentLeftTitle {
+    position: relative;
+}
+
+.childContentRight .contentLeftTitle:after {
+    content: '';
+    width: 170px;
+    height: 2px;
+    background: #599301;
+    position: absolute;
+    bottom: -2px;
+    left: 13px;
+}
+
+.childContentRight ul {
+    padding-left: 13px;
+}
+
+.childContentRight ul li {
+    border-bottom: 1px dashed #b5c997;
+    padding-left: 33px;
+    height: 28px;
+    line-height: 28px;
+    background: url("../images/liJiantou_03.jpg") no-repeat 14px;
+}
+
+.childContentRight ul .active {
+    color: white;
+    background: url("../images/liJiantou_06.jpg") no-repeat 14px #599301;
+    border-bottom: none;
+}
+
+.jiaMen {
+    margin-top: 43px;
+    margin-left: 10px;
+}
+
+.culture .newsUL {
+    padding-right: 37px;
+}
+
+.culture .newsUL li {
+    background: url("../images/lijiantou2_03.jpg") no-repeat 3px;
+    border-bottom: 1px dashed #c2bcaa;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.culture .newsUL li p {
+    float: left;
+}
+
+.culture .newsUL li span {
+    float: right;
+}
+
+.childContent .noBack {
+    background: none;
+}
+
+.childContent .techPl {
+    padding-left: 15px;;
+}
+
+.showImg {
+    margin-bottom: 20px;
+    margin-top: 13px;
+    margin-left: 12px;
+}
+
+.showImg img {
+    display: block
+}
+
+.smallImg ul li {
+    float: left;
+    text-align: center;
+    margin-right: 13px;
+}
+
+.smallImg ul li p {
+    line-height: 27px;
+}
+
+.smallImg .leftIon {
+    position: absolute;
+    left: -16px;
+    top: -10px;
+}
+
+.smallImg {
+    position: relative;
+}
+
+.smallImg .rightIon {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+
+.culture p {
+    text-indent: 2em;
+    padding-right: 22px;
+    line-height: 24px;
+}
+
+.culture .pMB {
+    margin-bottom: 24px;
+}
+
+.culture h3 {
+    font-size: 13px;
+    line-height: 24px;
+    color: #336600;
+}
+
+.smallImg ul li {
+    width: 123px;
+
+}
+
+.smallImg ul li p {
+    padding-right: 0;
+    margin-left: -25px;;
+}
+
+.programImg {
+
+    padding: 0 20px;
+}
+
+.programImg ul {
+    padding-bottom: 28px;
+    padding-top: 15px;
+    border-bottom: 1px #c2bcaa dashed;
+}
+
+.programImg ul li {
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.programImg ul li p {
+    line-height: 32px;
+}
+
+.programImg .noMarginR {
+    margin-right: 0;
+}
+
+.page {
+    padding-right: 53px;
+}
+
+.page p {
+    font-family: Consolas;
+    text-align: right;
+    margin-top: 15px;
+}
+.page p span{
+    color: #599301;
+}
+.page p a{
+    color: #505050;
+}
+.contactDl{
+    padding: 15px 32px 164px 32px;
+}
+.contactDl dl{
+    border-bottom: 1px dashed #c2bcaa;
+    padding-left: 10px;
+    padding-bottom: 26px;
+    margin-bottom: 11px;
+}
+.contactDl dl dt{
+    font-size: 13px;
+    color: #21630d;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 32px;
+    background: url("../images/hongkong.png") no-repeat left center;
+}
+.contactDl dl dd{
+    line-height: 24px;
+}
+.contactDl dl .active{
+    background: none;
+    padding-left:0;
+}
+.bannerImg .left{
+    border: none;
+    width: 30px;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    font-family:Consolas;
+    position: absolute;
+    left: 4px;
+    top: 50px;}
+.bannerImg .right{
+    border: none;
+    width: 30px;
+    height: 80px;
+    background: rgba(0,0,0,0.4);
+    font-family:Consolas;
+    position: absolute;
+    top: 50px;
+    right: 4px;}
+.bannerImg{
+    position: relative;
+    overflow: hidden;
+    width: 930px;
+    height: 216px;
+}
+.bannerImg ul li{
+    float: left;
+}

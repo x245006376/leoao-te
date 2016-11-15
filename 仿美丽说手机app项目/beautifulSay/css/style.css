@@ -1,0 +1,226 @@
+/*开场动画部分*/
+*{
+    font-family: 微软雅黑;
+}
+a{
+    text-decoration: none;
+}
+#begin-view .button{
+position: absolute;
+    right: 2px;
+    top: 2px;
+}
+#begin-view .ion-slide-box{
+    position: relative;
+}
+#begin-view .ion-slide,#begin-view .ion-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/*首页部分*/
+#row-title-p{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    line-height: 43px;
+    color: #ff4f79;
+}
+#row-title-al{
+    font-size: 24px;
+    padding:0 8px;
+}
+#row-title-ar{
+    padding: 0;
+    font-size: 24px;
+    color: #ff4f79;
+}
+/*副标题*/
+#bar-subheader {
+    padding: 1px;
+}
+#bar-subheader a{
+    text-decoration: none;
+    text-align: center;
+    color: #555555;
+    padding: 0;
+    line-height: 42px;
+}
+/*tabs*/
+#ion-tabs .tab-item.tab-item-active{
+    color: #ff4f79;
+}
+
+.more{
+    padding: 0;margin: 0;
+}
+.more li{
+    padding: 0 3px;
+}
+.hengtiao{
+    background-color: #eeeeee;
+    height: 6px;
+}
+#meili .gd span{
+    line-height:30px;
+}
+#meili .gd .spanl{
+    float: left;
+    padding-left:10px;
+    font-weight: 500;
+    color: #999;
+}
+#meili .gd .spanr{
+    float: right;
+    font-size: 12px;
+    color: #ff4f79;
+}
+#meili ul{
+    padding: 0;
+}
+#meili ul li{
+    padding: 0 15px;
+}
+#listCard .item-avatar h2{
+    font-weight:bold;
+    color: #333333;
+}
+#search label{
+    padding: 0 8px;
+}
+#search span{
+    width: 10%;
+}
+#search .xl{
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 2px;
+}
+#search input {
+    width: 75%;
+}
+#search .qx{
+    text-decoration: none;
+    color: #333;
+    margin-left:5px;
+    line-height: 30px;
+    width: 40px;
+}
+#search .rm{
+    padding: 5px;
+    line-height: 40px;
+    color: #666;
+    font-size: 16px;
+}
+#search .buttons{
+    background-color: #fff;
+}
+#search .buttons li{
+    background-color: #fff;
+}
+#search .buttons li a{
+    padding: 5px;
+    border-radius: 30%;
+    background-color: #f4f4f4;
+    color: #666;
+    outline: none;
+}
+/*运动风*/
+#sport .p{
+    padding: 10px;
+    color: #999;
+    margin: 0;
+}
+#yundong #fanhui a{
+    float: left;
+    font-weight:bold;
+}
+#yundong #fanhui h3{
+    margin: 0;
+}
+#sport ul li p{
+    text-align: center;
+    color: #ff4f79;
+}
+/*美丽专家号*/
+#meili ul{
+    margin: 10px 0;
+}
+#meili .meili-li {
+    padding:0 0 0 76px;
+}
+#meili ul h2{
+    display: inline-block;
+    margin-top:8px;
+}
+#meili ul span{
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #ff4f79;
+    float: right;
+    margin-right: 30px;
+    color: #fff;
+}
+#love .row,#classify .row{
+    padding: 0;
+}
+#love .row-title .col,#classify .row-title .col{
+    padding: 0;
+    margin: 0;
+}
+.row-title-p-love{
+    color: #333;
+    font-weight:bold;
+}
+#xia .item-thumbnail-left{
+    min-height:0;
+}
+#xia .logo img{
+    height: 28px;
+}
+#xia .logo .spanr{
+    float: right;
+    padding-right: 10px;
+    color: #ff4f79;
+}
+#xia ul li img{
+    width: 100%;
+}
+#xia1 img{
+    width: 100%;
+}
+#liuxin ul li p{
+    text-align: center;
+    color: #ff4f79;
+}
+#fenlei .col{
+    padding: 0;
+}
+#fenlei ul li{
+    border: 1px solid #ccc;
+
+}
+#fenlei ul li img{
+    width: 100%;
+}
+#news .ion-nav-title p{
+    margin: 0;
+}
+#news-list{
+    padding: 0;
+    margin: 0;
+}
+#news-list li{
+    margin: 0;
+}
+#news-list li p{
+    line-height: 38px;
+}
+#news-list li p i{
+    float: right;
+}
+#myself .ion-nav-title{
+    padding: 0;
+    margin: 0;
+}

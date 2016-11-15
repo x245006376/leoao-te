@@ -1,0 +1,27 @@
+[
+  {"name":"她刊",
+    "miaoshu":"中国女性第一刊",
+    "img":"images/zj1.gif"
+  },
+  {"name":"S小姐家",
+    "miaoshu":"解决你的身形难题",
+    "img":"images/zj2.gif"
+  },
+  {"name":"我配",
+    "miaoshu":"我配，与你分享时尚观点",
+    "img":"images/zj3.gif"
+  },
+  {"name":"pony朴惠敏",
+    "miaoshu":"韩国资深美妆达人",
+    "img":"images/zj4.gif"
+  },
+  {"name":"美肤酱",
+    "miaoshu":"皮肤好好的哒，做个美女子",
+    "img":"images/zj5.gif"
+  },
+  {"name":"时尚芭莎风格衣橱",
+    "miaoshu":"等你好久",
+    "img":"images/zj6.gif"
+  }
+
+]

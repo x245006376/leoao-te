@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reveal.css">
+    <link rel="stylesheet" href="../../css/pop.css">
+    <link href="../../css/public.css" rel="stylesheet" type="text/css"/>
+
+    <!--<link rel="stylesheet" href="css/landingWindow.css">-->
+    <!-- <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>-->
+    <script src="../../js/jquery-1.6.min.js" type="text/javascript"></script>
+    <script src="../../js/reveal.js" type="text/javascript"></script>
+    <script src="../../js/pop.js" type="text/javascript"></script>
+    <!--<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>-->
+    <script>
+        $(function(){
+            function total(){
+                var total = 0;
+
+                for (var i = 0; i < $(".money").length; i++) {
+                    var b=parseInt($(".money").children('span').eq(i).text());
+                    total+=b;
+                };
+                $(".total").children('div').children('span').html("¥" + total);
+                $(".total").children('div').children('p').find('span').html($('#inventory').find('ul').length);
+                $('.totals').children('p').find('span').html("¥" + total+"元");
+                return total;
+            };
+            total();
+
+        })
+    </script>
+</head>
+<body class="lxh">
+<div class="top">
+    <div class="inner overflowH clearFloat">
+        <div><a href="javascript:;">请登录</a><a href="javascript:;">免费注册</a></div>
+        <ul class="overflowH">
+            <li><a href="javascript:;">我的合电台</a></li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li><a href="javascript:;">我的收藏</a></li>
+            <li><a href="javascript:;">客服中心</a></li>
+            <li><a href="javascript:;">在线咨询</a></li>
+        </ul>
+    </div>
+</div>
+<div class="inner">
+    <div class="course">
+        <div class="logo fl">
+            <a href="../../index.html"><img src="../../images/buyCarLog.png" alt="这是logo"></a>
+        </div>
+        <h2 class="fl">购物车</h2>
+        <div class="line fr"></div>
+        <ul class="courseRight fr">
+            <li>
+                <span class="finish">1</span>
+                <p>我的购物车</p>
+            </li>
+            <li>
+                <span class="finish">2</span>
+                <p>填写/核对订单信息</p>
+            </li>
+            <li>
+                <span>3</span>
+                <p>订单提交成功</p>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <h3>填写并核对订单信息</h3>
+    </div>
+    <div class="writeMessageContent">
+        <div class="writeAdd">
+            <h3>收货人信息</h3>
+            <div><p><span>*</span>公司全称:</p><input type="text"></div>
+            <div>
+                <p><span>*</span>所在区域:</p>
+                <select>
+                    <option>--请选择--</option>
+                </select>
+            </div>
+            <div><p><span>*</span>详细地址:</p><input type="text" placeholder="街道、办公楼、门牌号"></div>
+            <div><p><span>*</span>收货人:</p><input type="text"></div>
+            <div class="tel fl"><p><span>*</span>手机:</p><input type="text"></div>
+            <div class="tel fl"><p>或<span>*</span>固定电话:</p><input type="text"></div>
+            <div class="clear"></div>
+            <div><p>邮箱:</p><input type="text"></div>
+            <div class="saveAdd">保存地址</div>
+        </div>
+        <div class="way">
+            <h3>支付方式</h3>
+            <div>货到付款</div>
+        </div>
+        <div class="inventory" id="inventory">
+            <h3>送货清单</h3>
+            <ul>
+                <li class="pic"><img src="../../images/liu_buyCar_03.png" alt="这是图片"></li>
+                <li class="explain">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</li>
+                <li class="money">¥<span>83833。00</span></li>
+                <li class="num">x10</li>
+            </ul>
+            <ul>
+                <li class="pic"><img src="../../images/liu_buyCar_03.png" alt="这是图片"></li>
+                <li class="explain">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</li>
+                <li class="money">¥<span>83833。00</span></li>
+                <li class="num">x10</li>
+            </ul>
+            <ul>
+                <li class="pic"><img src="../../images/liu_buyCar_03.png" alt="这是图片"></li>
+                <li class="explain">HP惠普15-bdoo1tx/x5p5-8pA/i3超极本</li>
+                <li class="money">¥<span>83833。00</span></li>
+                <li class="num">x10</li>
+            </ul>
+        </div>
+        <div class="bill">
+            <h3 class="fl">发票信息</h3>
+            <p class="fl">明细（<a class="big-link"  data-reveal-id="myModal02" data-animation="fade">修改</a>）</p>
+            <div class="clear"></div>
+        </div>
+        <div class="total fr">
+            <div><p><span>3</span>件商品，总金额：</p><span>¥83833.00</span></div>
+            <p>运费：</p><span>¥0.00</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="totals fr">
+        <p>应付总额： <span>¥3748.00元</span></p>
+        <ul class="fr">
+            <li>寄送至：</li>
+            <li>南京市</li>
+            <li>朝阳区</li>
+            <li>悠乐汇982</li>
+            <li>刘贺</li>
+            <li>158****2776</li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <a class="submit fr big-link" data-reveal-id="myModal" data-animation="fade">提交订单</a>
+</div>
+<div class="clear"></div>
+<div class="bottom">
+    <div class="inner overflowH">
+        <ul class="clearFloat">
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>新手入门</dt>
+                    <dd><a href="javascript:;">新用户注册</a></dd>
+                    <dd><a href="javascript:;">找回密码</a></dd>
+                    <dd><a href="javascript:;">FAQ</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="overflowH">
+            <a href="javascript:;">合电站简介</a>
+            <a href="javascript:;">合作伙伴</a>
+            <a href="javascript:;">法律声明</a>
+            <a href="javascript:;">联系方式</a>
+        </div>
+        <p>Copyright &copy; 2000-2015 一新科技 京ICP备09004081号-2 京公网安备110108400105号</p>
+    </div>
+</div>
+
+<!--订单提交-->
+<div id="myModal" class="reveal-modal">
+    <div class="orderPop positionCenter cartPop pop">
+        <div class="orderPopTitle redBg cartPopTitle">
+            <h3 class="fl"><i></i>订单提交</h3>
+            <span class="fr  close-reveal-modal"></span>
+        </div>
+        <div class="orderPopSuccessAdd ">
+            <h3> <i class="fl"></i>提交成功</h3>
+            <p>订单已提交成功，审核通过后，我们将尽快给您配送。</p>
+        </div>
+        <div class="table">
+            <table class="popImgBorder" >
+                <tr><th>订单号</th><th>产品名称</th><th>须支付金额</th><th>支付方式</th><th>预计送达时间</th></tr>
+                <tr><td>20160818008</td><td>1.联想LX-738-398EH<br/>2.联想LX-738-398EH</td><td class="redColor">8000.00</td><td>货到付款</td><td>2016年8月28日</td></tr>
+            </table>
+        </div>
+        <div class="orderBtn">
+            <a href="#">继续购物</a>
+            <a href="#" class="aRightClear">查看订单</a>
+        </div>
+    </div>
+</div>
+
+<!--发票-->
+<div id="myModal02" class="reveal-modal">
+    <div class="receiptPop positionCenter pop">
+        <div class="receiptPopTitle grayBg">
+            <h3 class="fl">发票信息</h3>
+            <span class="fr close-reveal-modal"></span>
+        </div>
+        <div class="receiptType">
+            <div class="receiptTypeBtn redBg fl whiteFont" id="normalReceipt">普通发票</div>
+            <div class="receiptTypeBtn grayBg fl darkFont" id="valueReceipt">增值税发票</div>
+        </div>
+        <div class="addValueReceiptInfo valueReceiptInfo" id="valueReceiptInfo">
+            <p>温馨提示:首次开具增值税发票的顾客，需上传<b>增票资质</b>，通过审核后可为您提供增票</p>
+            <form>
+                <span><i>*</i>公司名称 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>纳税人识别码 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>注册地址及电话 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>开户银行 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>银行账户 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>发票收件人姓名 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>发票收件人电话 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>发票寄送地址 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <div class="addValueReceiptBtn">
+                    <div class="checkboxDiv"><label><i></i><input type="checkbox" class="checkbox" checked/></label></div><em>我已阅读并同意《发票须知》</em><br/>
+                    <button class="blueBg">确定</button>
+                    <button class="blueBg btnClear">取消</button>
+                </div>
+            </form>
+        </div>
+        <div class="normalReceiptInfo addValueReceiptInfo" id="normalReceiptInfo">
+            <form>
+                <span><i>*</i>公司名称 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>纳税人识别码 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>注册地址及电话 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>开户银行 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <span><i>*</i>银行账户 :　</span>
+                <input type="text" class="popImgBorder"/><br/>
+                <div class="addValueReceiptBtn normalReceiptBtn">
+                    <button class="blueBg">确定</button>
+                    <button class="blueBg btnClear">取消</button>
+                    <p>温馨提示:发票的开票全额职能以实际交易支付额为准,不包含优惠活动部分。</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,433 @@
+/******** pop公共样式 ******/
+.redBg{background: #f84748;}
+.grayBg{background:#e5e5e5}
+.blueBg{background:#1a7fcd}
+.redColor{color:#f84748;}
+.whiteFont{color:#fff;}
+.darkFont{color:#000;}
+.show{display:block;}
+.hide{display:none;}
+.fl{float:left;}
+.fr{float:right;}
+.popImgBorder{border:1px #e5e5e5 solid;}
+/*.positionCenter{position:absolute;left:0;right: 0;top:0;bottom:0;margin:auto;}*/
+.liMarginRightClear{margin-right:0;}
+.liMarginLeftClear{margin-left:0;}
+input{outline:none;}
+.cartPop,.receiptPop,.orderPop,.addAddressPop{background: white;}
+/********** cartPop **********/
+.cartPop{
+    width:600px;
+    height:400px;
+
+}
+.cartPopTitle{
+    height:40px;
+}
+.cartPopTitle h3{
+    height:40px;
+    font-size: 20px;
+    line-height:40px;
+    margin-left:22px;
+
+}
+.cartPopTitle h3 i{
+    display: inline-block;
+    vertical-align: middle;
+    width:33px;
+    height:23px;
+    margin-right:25px;
+    background:url("../images/liu_pop_bg.png") no-repeat 0px 0px #f84748;
+}
+.cartPopTitle span{
+    width:14px;
+    height:18px;
+    margin-right:15px;
+    margin-top:12px;
+    background:url("../images/liu_pop_bg.png") no-repeat -50px 0px #f84748;
+}
+.cartPopSuccessAdd{
+    height:66px;
+    padding:53px 153px;
+    border-bottom:1px #cacaca solid;
+
+}
+.cartPopSuccessAdd i{
+    width:66px;
+    height:66px;
+    margin-right:28px;
+    background:url("../images/liu_pop_bg.png") no-repeat -3px -41px;
+}
+.cartPopSuccessAddTittle h3{
+    font-size:24px;
+    color:#f84748;
+    margin-bottom:20px;
+}
+.cartPopSuccessAddTittle .a1{
+
+    font-size:18px;
+    color:#f96f00;
+    border-bottom: 1px #f96f00 solid;
+    margin-right:20px;
+
+}
+.cartPopSuccessAddTittle .a2{
+    font-size:18px;
+    color:#a4a4a4;
+    border-bottom: 1px #a4a4a4 solid;
+    margin-left:20px;
+}
+.cartPopSuccessAddTittle span{
+    display: inline-block;
+    vertical-align: middle;
+    width:2px;
+    height:16px;
+    background: #c3c3c3;
+}
+.guessYouLike h3{
+    font-size:14px;
+    height:24px;
+    line-height:24px;
+    color:#f83e3f;
+    margin-bottom: 9px;
+    margin-left:20px;
+}
+.guessYouLike ul{
+    width:534px;
+    margin:0 auto;
+}
+.guessYouLike ul li{
+    width:86px;
+    float:left;
+    margin-right:26px;
+    line-height:18px;
+}
+.guessYouLike ul li.liMarginRightClear{
+    margin-right:0;
+}
+.guessYouLike ul li a{
+    color:#2b2b2b;
+}
+.guessYouLike ul li span{
+    color:#f84748;
+    font-size:12px;
+}
+/********* orderPop  ********/
+.orderPopSuccessAdd{
+    text-align: center;
+}
+.orderPopSuccessAdd h3{
+    width:246px;
+    font-size:36px;
+    height:66px;
+    line-height:66px;
+    color:#f84748;
+    margin:28px auto 0;
+}
+.orderPopSuccessAdd h3 i{
+    width:66px;
+    height:66px;
+    margin-right:28px;
+    background:url("../images/liu_pop_bg.png") no-repeat -3px -41px;
+}
+.orderPopSuccessAdd p{
+    height:57px;
+    line-height:57px;
+    font-size:18px;
+    color:#f84748;
+}
+.table table{
+    width:558px;
+    height:112px;
+    margin:0 auto;
+    background:#f5f5f5;
+}
+.table table th{
+    height:30px;
+    border:1px #e5e5e5 solid;
+}
+.table table tr{
+    width:111px;
+    border:1px #e5e5e5 solid;
+}
+.table table td{
+    height:81px;
+    border:1px #e5e5e5 solid;
+}
+.orderBtn{
+    text-align: center;
+    font-size:0;
+    margin-top:28px;
+}
+.orderBtn a{
+    display: inline-block;
+    width:140px;
+    height:40px;
+    line-height: 40px;
+    font-size:14px;
+    color:#333;
+    background:#e5e5e5;
+    margin-right:100px;
+}
+.orderBtn a.aRightClear{
+    margin-right:0;
+}
+/*********** addAddressPop **********/
+.addAddressPop{
+    width:800px;
+    height:654px;
+    z-index: -1;
+}
+.addAddressPopTitle{
+    height:40px;
+    background:#e5e5e5;
+}
+.addAddressPop h3{
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    margin-left:20px;
+    color:#333;
+}
+.addAddressPop span{
+    width:15px;
+    height:18px;
+    margin:12px 20px 0 0;
+    background:url("../images/liu_pop_bg.png") no-repeat -78px 0px #e5e5e5;
+}
+.addAddressPop form{
+    padding-left:60px;
+}
+.addAddressPop form p{
+    height:36px;
+    line-height:36px;
+    font-size:16px;
+    margin-top:10px;
+}
+.addAddressPop form p i{
+    font-style: normal;
+    height:36px;
+    line-height: 36px;
+    width:8px;
+    color:#f84748;
+
+}
+.addAddressPop form input{
+    width:320px;
+    height:38px;
+    padding-left:6px;
+    outline:none;
+}
+.addAddressPopBtn{
+    display:block;
+    width:200px;
+    height:40px;
+    color:#fff;
+    border: none;
+    font-size:16px;
+    margin-top:30px;
+}
+.phone{
+    display: inline-block;
+}
+.addAddressPop form b{
+    font-weight: normal;
+    font-size:16px;
+    margin:0 32px;
+}
+.addAddressPop form .phone input{
+    width:180px;
+}
+/*********** area ****************/
+.area{
+    width:120px;
+    height:38px;
+    line-height:38px;
+    font-size:16px;
+    padding-left:20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.area i{
+    float:right;
+    width:14px;
+    height:7px;
+    margin:16px 20px 0 0;
+    background:url("../images/liu_pop_bg.png") no-repeat -127px -11px #fff;
+}
+.areaSelectBtn{
+    display: inline-block;
+    width:100%;
+    cursor: pointer;
+}
+.areaInfo{
+    width:426px;
+    height:235px;
+    position:absolute;
+    top:37px;
+    left:-1px;
+    padding:16px;
+    padding-bottom:0;
+    /*display:none;*/
+    z-index: 9;
+    background:white;
+}
+.areaSelect{
+
+    height:29px;
+    border-bottom:2px #ed5d5d solid;
+}
+.areaSelect ul li{
+    float:left;
+    width:76px;
+    height:27px;
+    line-height:27px;
+    text-align: center;
+    border:2px #e5e5e5 solid;
+    border-bottom:2px #ed5d5d solid;
+    margin-right:4px;
+}
+.areaSelect ul li.selectProvinces{
+    border:2px #ed5d5d solid;
+    border-bottom:2px #fff solid;
+}
+.areaSelect span{
+    width:10px;
+    height:13px;
+    margin:10px 0 0 0;
+    background:url("../images/liu_pop_bg.png") no-repeat -103px -5px #fff;
+}.addressInfoProvinces ,.addressInfoCities,.addressInfoAreas{
+    width:100%;
+    height:204px;
+ }
+.addressInfoProvinces ul li,.addressInfoCities ul li,.addressInfoAreas ul li{
+    float:left;
+    width:80px;
+    height:29px;
+    line-height:29px;
+    text-align: center;
+}
+/************* receiptPop *************/
+.receiptPop{
+    width:800px;
+    height:813px;
+}
+.receiptPopTitle{
+    height:60px;
+    line-height: 60px;
+}
+.receiptPopTitle h3{
+    height:60px;
+    font-size:24px;
+    color:#333;
+    padding-left:20px;
+}
+.receiptPopTitle span{
+    width:15px;
+    height:18px;
+    background:url("../images/liu_pop_bg.png") no-repeat -78px 0px #e5e5e5;
+    margin:22px 20px 0 0;
+}
+.receiptType{
+    height:40px;
+    padding:20px 50px;
+    border-bottom:1px solid #e5e5e5;
+}
+.receiptType .receiptTypeBtn{
+    height:40px;
+    width:168px;
+    line-height:40px;
+    text-align: center;
+    margin-right:20px;
+    font-size:18px;
+    cursor: pointer;
+}
+.addValueReceiptInfo p{
+    height:56px;
+    line-height:56px;
+    font-size:16px;
+    color:#a4a4a4;
+    text-align: center;
+}
+.addValueReceiptInfo p b{
+    font-weight: normal;
+    color: #f84748;
+}
+.addValueReceiptInfo form{
+    padding:0 120px;
+    text-align: right;
+}
+.addValueReceiptInfo form span{
+    font-size:16px;
+    color:#333;
+    height:40px;
+    line-height:40px;
+    vertical-align: top;
+}
+.addValueReceiptInfo form span i{
+    font-style: normal;
+    width:6px;
+    color:#f84748;
+}
+.addValueReceiptInfo form input{
+    width:390px;
+    height:38px;
+    margin-bottom:20px;
+    padding-left:8px;
+    vertical-align: top;
+}
+.addValueReceiptBtn{
+   text-align: center;
+    font-size:0;
+}
+.addValueReceiptBtn{
+    font-size:16px;
+}
+.addValueReceiptBtn button{
+    display:inline-block;
+    font-size:16px;
+    border:0;
+    width:100px;
+    height:40px;
+    margin-right:126px;
+    margin-top:40px;
+    color: #fff;
+}
+.addValueReceiptBtn button.btnClear{
+    margin-right:0;
+}
+.checkboxDiv{
+    width:16px;
+    height:16px;
+    margin-right:8px;
+    display: inline-block;
+    overflow: hidden;
+}
+.addValueReceiptBtn .checkbox{
+    width:14px;
+    height:14px;
+    padding:0;
+    border:0;
+    float: left;
+    margin:-16px 0 0 -16px;
+}
+.checkboxDiv i{
+    width:14px;
+    height:14px;
+    border:1px #f84748 solid;
+    display: inline-block;
+    background:url("../images/liu_pop_bg.png") no-repeat -89px -41px #fff;
+}
+.checkboxDiv i.newChockBoxBg{
+    background:url("../images/liu_pop_bg.png") no-repeat -89px -41px #fff;
+}
+.checkboxDiv i.newChockBoxNoBg{
+    background: none;
+}
+.valueReceiptInfo{
+    display:none;
+}
+.normalReceiptInfo{
+    margin-top:18px;
+}

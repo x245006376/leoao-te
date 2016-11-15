@@ -1,0 +1,23 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/love" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                流行
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="liuxin">
+        <img src="images/lx1.gif" style="width: 100%;">
+        <ul class="row" ng-repeat="item in lxs">
+            <li class="col">
+                <img ng-src="{{item.pic1}}" style="width: 100%;">
+                <p>￥ {{item.price1}}</p>
+            </li>
+            <li class="col">
+                <img ng-src="{{item.pic2}}" style="width: 100%;">
+                <p>￥ {{item.price2}}</p>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

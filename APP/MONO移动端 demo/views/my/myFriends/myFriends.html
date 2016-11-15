@@ -1,0 +1,31 @@
+<ion-view view-title="猫的关注" class="animated bounceInLeft">
+    <ion-nav-bar class="bar-calm themeColor"></ion-nav-bar>
+    <ion-nav-buttons>
+        <div class="button-bar item-button-left item-button-right">
+            <button class="button button-icon button-clear ion-more" menu-toggle="left"></button>
+            <button class="button button-clear" ui-sref="tabs.whatsNew">
+                <i class="icon ion-android-home"></i>
+            </button>
+        </div>
+    </ion-nav-buttons>
+    <ion-content class="has-header has-footer">
+        <ion-list class="list card" show-reorder="show.reorder" show-delete="show.delete">
+            <ion-item class="item-avatar-left" ng-repeat="item in friends" >
+                <ion-delete-button class="ion-minus-circled" ng-click="delete(item)"></ion-delete-button>
+                <img ng-src="{{item.avatar}}"/>
+                <h2>{{item.author}}</h2>
+                <ion-reorder-button class="ion-navicon"
+                                    on-reorder="reorder(item,$fromIndex,$toIndex)">
+                </ion-reorder-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <div class=" bar bar-footer bar-calm themeColor">
+        <div class="button-bar item-button-left item-button-right">
+            <button class="button button-icon button-clear ion-android-delete" ng-click=showDelete()></button>
+            <button class="button button-clear" ng-click="showReorder()">
+                <i class="icon ion-navicon"></i>
+            </button>
+        </div>
+    </div>
+</ion-view>

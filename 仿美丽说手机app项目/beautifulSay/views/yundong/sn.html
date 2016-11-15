@@ -1,0 +1,23 @@
+<ion-view id="yundong">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-title >
+            <p id="fanhui">
+                <a href="#/tabs/home" id="row-title-al" class="icon ion-ios-arrow-back" style="float: left"></a>
+                噗通少女心
+            </p>
+        </ion-nav-title>
+    </ion-nav-bar>
+    <ion-content id="sport">
+        <p class="p">最美不过少女容，最萌不过少女心，这个夏日，让我们一起做个美少女。
+        </p>
+        <ul class="row" ng-repeat="item in images">
+            <li class="col">
+                <img ng-src="{{item.img}}" style="width: 100%;">
+            </li>
+            <li class="col">
+                <img ng-src="{{item.img1}}" style="width: 100%;">
+            </li>
+        </ul>
+
+    </ion-content>
+</ion-view>

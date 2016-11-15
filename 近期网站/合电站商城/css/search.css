@@ -1,0 +1,383 @@
+﻿
+.clear{ clear: both;}
+.clearfix:after{content: ""; display: block;height:0;clear: both;font-size:0;*zoom:1;}
+body{font-family: 微软雅黑;}
+.inner{ width: 1000px; margin:0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+
+input::-ms-clear{display:none;}/*隐藏文本框叉子*/
+input::-ms-reveal{display:none;}/*隐藏密码框小眼睛*/
+
+a{
+color: #333
+}
+.clear {
+    clear: both;
+}
+
+.tou {
+    height: 175px;
+    background: #ccc;
+}
+
+.searchWrap .inner {
+    width: 1002px;
+    margin: 0 auto;
+}
+
+.crumbsBar {
+    background: #f9f9f9;
+    height: 40px;
+    margin-bottom: 1px;
+}
+
+.crumbsBar ul li {
+    color: #333;
+    height: 40px;
+    font: 14px/40px "微软雅黑";
+    float: left;
+    margin-right: 10px;
+}
+
+.crumbsBar ul .jt {
+    font-size: 20px;
+    font-family: Consolas;
+}
+
+.crumbsBar ul li a {
+    color: #333;
+}
+
+.searchLine .slKey {
+    float: left;
+    width: 102px;
+    padding-left: 16px;
+    background: #f9f9f9;
+    font: 18px/50px "微软雅黑";
+    color: #a4a4a4;
+    border-bottom: 1px solid #fff;
+}
+
+.searchLine .slValue {
+    background: #fff;
+    border-bottom: 1px solid #f9f9f9;
+    padding-left: 32px;
+    float: left;
+    width: 852px;
+}
+
+.searchLine .slValue ul li {
+    line-height: 50px;
+    float: left;
+}
+
+.searchLine .slValue ul li a {
+    padding: 6px 11px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.searchLine .slValue ul  .ac a{
+    background-color: #f84748;
+    color: #fff;
+}
+.searchLine .slValue ul  .ac span{
+    background-color: #f84748;
+    color: #fff;
+}
+.searchLine .slValue ul li span {
+    color: #f84748;
+}
+
+.searchLine:after {
+    content: '';
+    font-size: 0;
+    display: block;
+    clear: both;
+}
+
+.searchSelector {
+    position: relative;
+    background-color: #f9f9f9;
+    padding-bottom: 21px;
+}
+
+.searchSelector:after {
+    content: '';
+    width: 1002px;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.searchContent {
+    padding-bottom: 75px;
+    background: #f9f9f9;
+    position:relative;
+
+}
+
+.searchContent .searchContentTitle h3 {
+    color: #fff;
+    font: 18px/40px "微软雅黑";
+    background: #5ab0f3;
+    float: left;
+    padding: 0 63px;
+    margin-right: 2px;
+}
+
+.searchContent .searchContentTitle ul {
+    background: #fff;
+    width: 800px;
+    float: left;
+}
+
+.searchContent .searchContentTitle ul li {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+}
+
+.searchContent .searchContentTitle ul li a {
+    border-right: 2px solid #f5f5f5;
+    font-size: 18px;
+    color: #333;
+    padding: 0 22px;
+    font-family: "微软雅黑";
+}
+
+.searchContent .searchContentTitle ul .ac {
+    background: #f84748;
+}
+
+.searchContent .searchContentTitle ul .ac a {
+    color: #fff;
+    border-right-color: #f84748;;
+}
+
+.searchLeft {
+    width: 197px;
+    float: left;
+    margin-right: 2px;
+    margin-top: 2px;
+
+}
+
+.searchRight {
+    margin-left: 2px;
+    width: 800px;
+    float: left;
+}
+.searchRight .con_hol{position: absolute;right:0;bottom:0px;}
+.searchRight .con_hol .holder{
+   display: inline-block;
+}
+.searchRight .con_hol .holder a{display: inline-block;width:35px;height:35px;border:1px solid #ccc;text-align: center;line-height: 35px;}
+.searchRight .con_hol .holder a.jp-current{background: red;color:#000000;}
+.searchRight .con_hol  .input{width:36px;height:36px;text-align:center;line-height:36px;}
+.searchRight .con_hol  .button{padding:0 12px;line-height:36px;height:36px;display: inline-block;border:1px solid #ccc;}
+.searchRight .con_hol .holder a.jp-disabled{display: none;}
+.searchRight ul li {
+    margin-top: 2px;
+    margin-right: 2px;
+    background: #fff;
+    float: left;
+    width: 196px;
+    border: 1px solid #f5f5f5;
+}
+
+.searchRight ul .itemImg {
+
+    height: 175px;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+    padding-top: 18px;
+    margin-bottom: 9px;
+
+}
+.searchRight ul .itemPrice, .searchRight ul .itemName{
+    padding:0 13px;
+}
+.searchRight ul .itemPrice a{
+    font: 18px/22px "微软雅黑";
+    color: #f84748;
+}
+ .searchRight ul .itemName a{
+     font: 13px/25px "微软雅黑";
+     color: #333;
+ }
+ .pageNum{
+     float: right;
+     padding-top: 20px;
+ }
+.pageNum a{
+    color: #333;
+    display: block;
+    float: left;
+    margin-left: 4px;
+    padding: 10px 13px;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+}
+.pageNum .ac{
+    border-color: #f8595a;
+    background: #f8595a;
+}
+.searchContent:after{
+    content: '';
+    font-size: 0;
+    display: block;
+    clear: both;
+}
+/*searchFail*/
+.searchEor {
+    background: #fbeed8;
+    padding: 24px 18px;
+}
+.searchEor p{
+    font-size: 14px;
+    color: #333;
+}
+.searchEor p span{
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+.searchDz{
+    background: #f9f9f9;
+    height: 40px;
+    line-height: 40px;
+}
+.searchDz p{
+    float: left;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+.searchDz i{
+    font-style: normal;
+    font-family: Consolas;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.searchDz span{
+    font-size: 14px;
+    color: #a4a4a4;
+}
+.tuiJianTitle h3{
+    padding-left: 24px;
+    font: 18px/40px "微软雅黑";
+}
+.searchPart{
+    padding-bottom: 32px;
+    background: #fff;
+
+}
+.searchPart:after{
+    content: '';
+    font-size: 0;
+    display: block;
+    clear: both;
+}
+.searchPart1{
+    margin-top: 2px;
+    margin-right: 2px;
+    background: #fff;
+    float: left;
+    width: 196px;
+    border: 1px solid #f5f5f5;
+}
+.searchPart1 .itemImg {
+
+    height: 175px;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+    padding-top: 18px;
+    margin-bottom: 9px;
+
+}
+.searchPart1 .itemPrice, .searchPart1 .itemName{
+    padding:0 13px;
+}
+.searchPart1 .itemPrice a{
+    font: 18px/22px "微软雅黑";
+    color: #f84748;
+}
+.searchPart1 .itemName a{
+    font: 13px/25px "微软雅黑";
+    color: #333;
+}
+
+
+/*下方推荐tab*/
+.guess{margin-top: 25px;padding: 0 20px;}
+.guess .title li{float: left;line-height: 49px;margin-right: 32px;}
+.choose{color: #f67516;}
+/*.guess .pic{position: absolute;}
+.guess .pic ul{height: 328px;border: 1px dashed #eee;margin-bottom: 35px;}
+.guess .pic ul li{float: left;padding: 68px 19px 11px;border-right: 1px dashed #eee; width: 200px;}
+.guess .pic .lastLi{border: none;}
+.guess .pic p{line-height: 18px;margin-top: 20px;}
+.guess .pic li span{color:#f8595a;margin-left: 50px;line-height: 22px;}
+.guess .pic a{display: block;width: 158px;height: 28px;border: 1px solid #eee;border-radius: 7px;margin: 0 auto;line-height: 28px;text-align: center;}
+.guess .pic .arrows{display: block;width: 30px;height: 80px;text-align: center;color: #fff;font-size: 20px;background: #333;opacity: .2;line-height: 80px;position: absolute;top: 50%;margin-top: -58px;}
+.guess .pic .leftPoint{left: 0;}
+.guess .pic .rightPoint{right: 0;}*/
+.guess .box{ width:980px; margin:0 auto; position:relative; overflow-x:hidden; _height:100%;height: 328px;}
+.guess .picbox{ width:980px; height:328px; overflow:hidden; position:relative;}
+.guess .piclist{ height:328px;position:absolute; left:0px; top:0px;border: 1px dashed #eee;}
+.guess .piclist li{padding: 68px 18px 11px; float:left;width:210px;}
+.guess .swaplist{ position:absolute; left:-3000px; top:0px}
+.guess .og_prev,.og_next{ width:30px; height:50px; background:url(../images/icon.png) no-repeat; background:url(../images/icon_ie6.png) no-repeat\9; position:absolute; top:50%; z-index:99; cursor:pointer;filter:alpha(opacity=70); opacity:0.7;}
+.guess .og_prev{ background-position:0 -60px; left:0;}
+.guess .og_next{ background-position:0 0; right:0;}
+
+.guess .piclist li span{color:#f8595a;margin-left: 50px;line-height: 22px;}
+.guess .piclist .in{display: block;width: 158px;height: 28px;border: 1px solid #eee;border-radius: 7px;margin: 0 auto;line-height: 28px;text-align: center;}
+.guess .piclist p{line-height: 18px;margin-top: 20px;}
+
+
+
+.minus{cursor: pointer;}
+.plus{cursor: pointer;}
+/*侧边推荐栏*/
+.sidebar{
+    float: left;
+    background: #ffffff;
+    width:198px;
+    border-bottom:1px solid #e5e5e5;}
+.sidebar .sidebarTop{
+    width:198px;
+    height:40px;
+    background: #5ab0f3;
+    color: #fff;
+    line-height:40px;
+    text-align: center;
+    margin-bottom:2px;}
+.sidebar .sidebarPicBig{
+    height:80px;
+    width:198px;}
+.sidebar .sidebarPicBig img{
+    width:100%;
+    height:100%;}
+.sidebar .sidebarPic{
+    padding-left:16px;
+    border-left:1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
+}
+.sidebar .sidebarPic span{
+    line-height:28px;
+    text-align: center;
+    color: #f84748;
+    font-size:20px;
+    display: block;}
+.sidebar .sidebarPic p{
+    line-height:18px;
+    padding-bottom:40px;}
+.sidebarWire{
+    height:1px;
+    background: #e5e5e5;
+    width:160px;}
